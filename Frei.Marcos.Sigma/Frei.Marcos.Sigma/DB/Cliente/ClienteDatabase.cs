@@ -53,6 +53,11 @@ namespace Frei.Marcos.Sigma.DB.Cliente
             return db.ExecuteInsertScriptWithPk(script, parms);
         }
 
+        public void Remover()
+        {
+
+        }
+
         public List<ClienteDTO> ListarClientes()
         {
             string script = @"SELECT * FROM Cliente";
