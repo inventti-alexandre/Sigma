@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="DB\Base\Connection.cs" />
     <Compile Include="DB\Base\Database.cs" />
+    <Compile Include="DB\Cliente\ClienteBusiness.cs" />
     <Compile Include="DB\Cliente\ClienteDatabase.cs" />
     <Compile Include="DB\Cliente\ClienteDTO.cs" />
     <Compile Include="DB\Funcionario\FuncionarioBusiness.cs" />
