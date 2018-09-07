@@ -47,6 +47,9 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCEP = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -103,7 +106,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 131);
+            this.label4.Location = new System.Drawing.Point(29, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 0;
@@ -111,7 +114,7 @@
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(159, 128);
+            this.txtEndereco.Location = new System.Drawing.Point(159, 154);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(100, 20);
             this.txtEndereco.TabIndex = 1;
@@ -120,7 +123,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(29, 157);
+            this.label5.Location = new System.Drawing.Point(29, 183);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 13);
             this.label5.TabIndex = 0;
@@ -128,7 +131,7 @@
             // 
             // txtComplemento
             // 
-            this.txtComplemento.Location = new System.Drawing.Point(159, 154);
+            this.txtComplemento.Location = new System.Drawing.Point(159, 180);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(100, 20);
             this.txtComplemento.TabIndex = 1;
@@ -137,7 +140,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(29, 183);
+            this.label6.Location = new System.Drawing.Point(29, 208);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 0;
@@ -145,7 +148,7 @@
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(159, 180);
+            this.txtCargo.Location = new System.Drawing.Point(159, 206);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(100, 20);
             this.txtCargo.TabIndex = 1;
@@ -154,7 +157,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(29, 209);
+            this.label7.Location = new System.Drawing.Point(29, 235);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 0;
@@ -162,7 +165,7 @@
             // 
             // txtObs
             // 
-            this.txtObs.Location = new System.Drawing.Point(159, 206);
+            this.txtObs.Location = new System.Drawing.Point(159, 232);
             this.txtObs.Name = "txtObs";
             this.txtObs.Size = new System.Drawing.Size(100, 20);
             this.txtObs.TabIndex = 1;
@@ -171,7 +174,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(29, 235);
+            this.label8.Location = new System.Drawing.Point(29, 261);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 13);
             this.label8.TabIndex = 0;
@@ -179,14 +182,14 @@
             // 
             // dtpNasc
             // 
-            this.dtpNasc.Location = new System.Drawing.Point(159, 235);
+            this.dtpNasc.Location = new System.Drawing.Point(159, 261);
             this.dtpNasc.Name = "dtpNasc";
             this.dtpNasc.Size = new System.Drawing.Size(200, 20);
             this.dtpNasc.TabIndex = 2;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(136, 283);
+            this.btnCadastrar.Location = new System.Drawing.Point(136, 309);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 3;
@@ -211,11 +214,39 @@
             this.txtName.TabIndex = 1;
             this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(265, 126);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 3;
+            this.btnSearch.Text = "Buscar";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(29, 131);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(28, 13);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "CEP";
+            // 
+            // txtCEP
+            // 
+            this.txtCEP.Location = new System.Drawing.Point(159, 128);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(100, 20);
+            this.txtCEP.TabIndex = 1;
+            this.txtCEP.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // frmCadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 485);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.dtpNasc);
             this.Controls.Add(this.txtObs);
@@ -225,6 +256,8 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtComplemento);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtCEP);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtRG);
@@ -263,5 +296,8 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtCEP;
     }
 }
