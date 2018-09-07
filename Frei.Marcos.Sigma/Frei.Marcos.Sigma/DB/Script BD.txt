@@ -1,0 +1,75 @@
+﻿DROP DATABASE IF EXISTS SigmaDB;
+CREATE DATABASE SigmaDB;
+USE SigmaDB;
+
+CREATE TABLE Funcionario (
+idFuncionario INT NOT NULL AUTO_INCREMENT,
+Usuario VARCHAR(20) NOT NULL,
+Nome VARCHAR(50) NOT NULL,
+Data_nascimento DATE NOT NULL,
+CPF VARCHAR(15) NOT NULL,
+RG VARCHAR(15) NOT NULL,
+Endereco VARCHAR(500) NOT NULL,
+Complemento VARCHAR(50) NULL,
+Cargo VARCHAR(45) NULL,
+observacao VARCHAR(100) NULL,
+PRIMARY KEY (idFuncionario));
+
+CREATE TABLE orcamento (
+id_orcamento INT NOT NULL AUTO_INCREMENT,
+data DATE NOT NULL,
+descricao VARCHAR(30) NULL,
+valor DOUBLE NOT NULL,
+situacao VARCHAR(45) NOT NULL,
+funcionario_id_funcionario INT NULL,
+PRIMARY KEY (id_orcamento),
+FOREIGN KEY (funcionario_id_funcionario) REFERENCES Funcionario (idFuncionario));
+
+CREATE TABLE Cliente (
+idCliente INT NOT NULL AUTO_INCREMENT,
+CPF_CNPJ VARCHAR(25) NULL,
+razao_social VARCHAR(45) NULL,
+nome VARCHAR(45) NOT NULL,
+Data_nascimento DATE NOT NULL,
+cep VARCHAR(45) NULL,
+estado VARCHAR(2) NOT NULL,
+cidade VARCHAR(45) NOT NULL,
+bairro VARCHAR(45) NOT NULL,
+endereco VARCHAR(45) NOT NULL,
+telefone VARCHAR(15) NULL,
+celular VARCHAR(15) NULL,
+PRIMARY KEY (idCliente));
+
+CREATE TABLE Atendimento (
+idAtendimento INT NOT NULL,
+Data DATE NULL,
+Descricao VARCHAR(300) NULL,
+Horario TIME NULL,
+Situacao VARCHAR(45) NULL,
+Funcionario_id_funcionario INT NULL,
+Orcamento_id_orcamento INT NULL,
+cliente_id_cliente INT NULL,
+PRIMARY KEY (idAtendimento),
+FOREIGN KEY (Funcionario_id_funcionario) REFERENCES Funcionario (idFuncionario),
+FOREIGN KEY (Orcamento_id_orcamento) REFERENCES orcamento (id_orcamento),
+FOREIGN KEY (cliente_id_cliente) REFERENCES Cliente (idCliente));
+
+CREATE TABLE pecas (
+id_pecas INT NOT NULL AUTO_INCREMENT,
+nome VARCHAR(50) NOT NULL,
+quantidade INT NOT NULL,
+valor DOUBLE NULL,
+descricao VARCHAR(500) NULL,
+orcamento_id_orcamento INT NULL,
+PRIMARY KEY (id_pecas),
+FOREIGN KEY (orcamento_id_orcamento) REFERENCES orcamento(id_orcamento));
+
+CREATE TABLE veiculos (
+id_veiculos INT NOT NULL AUTO_INCREMENT,
+placa VARCHAR(8) NOT NULL,
+marca VARCHAR(45) NOT NULL,
+modelo VARCHAR(15) NULL,
+cor VARCHAR(5) NULL,
+cliente_id_cliente INT NULL,
+PRIMARY KEY (id_veiculos),
+FOREIGN KEY (cliente_id_cliente) REFERENCES Cliente (idCliente));

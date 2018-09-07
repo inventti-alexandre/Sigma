@@ -31,9 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCPF = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtRG = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,13 +47,17 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtCEP = new System.Windows.Forms.TextBox();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
+            this.txtRG = new System.Windows.Forms.MaskedTextBox();
+            this.txtRGdig = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 31);
+            this.label1.Location = new System.Drawing.Point(29, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
@@ -72,19 +74,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 79);
+            this.label2.Location = new System.Drawing.Point(29, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "CPF";
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.Location = new System.Drawing.Point(159, 76);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(100, 20);
-            this.txtCPF.TabIndex = 1;
-            this.txtCPF.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -94,14 +88,6 @@
             this.label3.Size = new System.Drawing.Size(23, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "RG";
-            // 
-            // txtRG
-            // 
-            this.txtRG.Location = new System.Drawing.Point(159, 102);
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(100, 20);
-            this.txtRG.TabIndex = 1;
-            this.txtRG.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -116,7 +102,7 @@
             // 
             this.txtEndereco.Location = new System.Drawing.Point(159, 154);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(100, 20);
+            this.txtEndereco.Size = new System.Drawing.Size(384, 20);
             this.txtEndereco.TabIndex = 1;
             this.txtEndereco.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -208,7 +194,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(159, 24);
+            this.txtName.Location = new System.Drawing.Point(159, 76);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 1;
@@ -222,7 +208,7 @@
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Buscar";
             this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnCadastrar_Click);
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label10
             // 
@@ -233,19 +219,55 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "CEP";
             // 
+            // txtCPF
+            // 
+            this.txtCPF.Location = new System.Drawing.Point(159, 24);
+            this.txtCPF.Mask = "999,999,999-99";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(100, 20);
+            this.txtCPF.TabIndex = 4;
+            // 
+            // txtRG
+            // 
+            this.txtRG.Location = new System.Drawing.Point(159, 102);
+            this.txtRG.Mask = "99,999,999";
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(100, 20);
+            this.txtRG.TabIndex = 4;
+            // 
+            // txtRGdig
+            // 
+            this.txtRGdig.Location = new System.Drawing.Point(281, 102);
+            this.txtRGdig.Name = "txtRGdig";
+            this.txtRGdig.Size = new System.Drawing.Size(24, 20);
+            this.txtRGdig.TabIndex = 1;
+            this.txtRGdig.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(265, 105);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(10, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "-";
+            // 
             // txtCEP
             // 
             this.txtCEP.Location = new System.Drawing.Point(159, 128);
+            this.txtCEP.Mask = "99999-999";
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(100, 20);
-            this.txtCEP.TabIndex = 1;
-            this.txtCEP.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtCEP.TabIndex = 5;
             // 
             // frmCadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 485);
+            this.Controls.Add(this.txtCEP);
+            this.Controls.Add(this.txtRG);
+            this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.dtpNasc);
@@ -256,14 +278,13 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtComplemento);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtCEP);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtRG);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtRGdig);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label9);
@@ -280,9 +301,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtRG;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label5;
@@ -298,6 +317,10 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtCEP;
+        private System.Windows.Forms.MaskedTextBox txtCPF;
+        private System.Windows.Forms.MaskedTextBox txtRG;
+        private System.Windows.Forms.TextBox txtRGdig;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.MaskedTextBox txtCEP;
     }
 }

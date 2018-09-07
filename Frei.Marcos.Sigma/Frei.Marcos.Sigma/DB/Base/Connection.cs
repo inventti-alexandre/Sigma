@@ -11,7 +11,7 @@ namespace Nsf._2018.Modulo3.App.DB.Base
     {
         public MySqlConnection Create()
         {
-            string connectionString = "server=localhost;database=mydb;uid=root;password=1234;sslmode=none";
+            string connectionString = "server=localhost;database=SigmaDB;uid=root;password=1234;sslmode=none";
 
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();
