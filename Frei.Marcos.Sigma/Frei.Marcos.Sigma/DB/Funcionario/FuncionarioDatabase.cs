@@ -30,12 +30,11 @@ namespace Frei.Marcos.Sigma.DB.Funcionario
             return db.ExecuteInsertScriptWithPk(script, parms);
         }
 
-        public List<FuncionarioDTO> ConsultarFuncionarios(string CPF)
+        public List<FuncionarioDTO> ConsultarFuncionariosFiltro(string CPF)
         {
-            string script = @"SELECT * FROM Funcionario";
+            string script = $"SELECT * FROM Funcionario WHERE CPF like '%{CPF}%'";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("CPF", CPF));
 
             Database db = new Database();
             MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
@@ -101,6 +100,37 @@ namespace Frei.Marcos.Sigma.DB.Funcionario
 
             Database db = new Database();
             return db.ExecuteInsertScriptWithPk(script, parms);
+        }
+
+        public List<FuncionarioDTO> ConsultarFuncionarios()
+        {
+            string script = @"SELECT * FROM Funcionario";
+
+            List<MySqlParameter> parms = new List<MySqlParameter>();
+
+            Database db = new Database();
+            MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
+
+            List<FuncionarioDTO> Funcionarios = new List<FuncionarioDTO>();
+            while (reader.Read())
+            {
+                FuncionarioDTO dados = new FuncionarioDTO();
+                dados.idFuncionario = reader.GetInt32("idFuncionario");
+                dados.Usuario = reader.GetString("Usuario");
+                dados.Nome = reader.GetString("Nome");
+                dados.Data_nascimento = reader.GetDateTime("Data_nascimento");
+                dados.CPF = reader.GetString("CPF");
+                dados.RG = reader.GetString("RG");
+                dados.Endereco = reader.GetString("Endereco");
+                dados.Complemento = reader.GetString("Complemento");
+                dados.Cargo = reader.GetString("Cargo");
+                dados.observacao = reader.GetString("observacao");
+
+                Funcionarios.Add(dados);
+            }
+
+            reader.Close();
+            return Funcionarios;
         }
     }
 }

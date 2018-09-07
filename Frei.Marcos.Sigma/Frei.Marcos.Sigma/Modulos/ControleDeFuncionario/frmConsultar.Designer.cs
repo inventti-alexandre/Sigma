@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvFuncionario = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,16 +41,16 @@
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnAlter = new System.Windows.Forms.Button();
             this.btnProc = new System.Windows.Forms.Button();
-            this.txtCPF = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRem = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtCPF = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvFuncionario
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFuncionario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
             this.Column1,
             this.Column3,
@@ -60,12 +60,12 @@
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 165);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(650, 290);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvFuncionario.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvFuncionario.Location = new System.Drawing.Point(0, 165);
+            this.dgvFuncionario.Name = "dgvFuncionario";
+            this.dgvFuncionario.RowHeadersVisible = false;
+            this.dgvFuncionario.Size = new System.Drawing.Size(650, 290);
+            this.dgvFuncionario.TabIndex = 0;
             // 
             // Column2
             // 
@@ -142,6 +142,7 @@
             this.btnAlter.TabIndex = 1;
             this.btnAlter.Text = "Alterar";
             this.btnAlter.UseVisualStyleBackColor = true;
+            this.btnAlter.Click += new System.EventHandler(this.btnAlter_Click);
             // 
             // btnProc
             // 
@@ -151,13 +152,7 @@
             this.btnProc.TabIndex = 1;
             this.btnProc.Text = "Procurar";
             this.btnProc.UseVisualStyleBackColor = true;
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.Location = new System.Drawing.Point(161, 90);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(100, 20);
-            this.txtCPF.TabIndex = 3;
+            this.btnProc.Click += new System.EventHandler(this.btnProc_Click);
             // 
             // label1
             // 
@@ -176,6 +171,14 @@
             this.btnRem.TabIndex = 1;
             this.btnRem.Text = "Remover";
             this.btnRem.UseVisualStyleBackColor = true;
+            this.btnRem.Click += new System.EventHandler(this.btnRem_Click);
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.Location = new System.Drawing.Point(161, 90);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(100, 20);
+            this.txtCPF.TabIndex = 6;
             // 
             // frmConsultar
             // 
@@ -187,10 +190,10 @@
             this.Controls.Add(this.btnRem);
             this.Controls.Add(this.btnAlter);
             this.Controls.Add(this.btnNovo);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvFuncionario);
             this.Name = "frmConsultar";
             this.Size = new System.Drawing.Size(650, 500);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,7 +201,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvFuncionario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -211,8 +214,8 @@
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.Button btnAlter;
         private System.Windows.Forms.Button btnProc;
-        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRem;
+        private System.Windows.Forms.TextBox txtCPF;
     }
 }

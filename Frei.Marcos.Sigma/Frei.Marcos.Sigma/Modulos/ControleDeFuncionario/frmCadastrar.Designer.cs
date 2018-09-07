@@ -48,10 +48,8 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
-            this.txtRG = new System.Windows.Forms.MaskedTextBox();
-            this.txtRGdig = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
+            this.txtRG = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -227,31 +225,6 @@
             this.txtCPF.Size = new System.Drawing.Size(100, 20);
             this.txtCPF.TabIndex = 4;
             // 
-            // txtRG
-            // 
-            this.txtRG.Location = new System.Drawing.Point(159, 102);
-            this.txtRG.Mask = "99,999,999";
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(100, 20);
-            this.txtRG.TabIndex = 4;
-            // 
-            // txtRGdig
-            // 
-            this.txtRGdig.Location = new System.Drawing.Point(281, 102);
-            this.txtRGdig.Name = "txtRGdig";
-            this.txtRGdig.Size = new System.Drawing.Size(24, 20);
-            this.txtRGdig.TabIndex = 1;
-            this.txtRGdig.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(265, 105);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(10, 13);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "-";
-            // 
             // txtCEP
             // 
             this.txtCEP.Location = new System.Drawing.Point(159, 128);
@@ -260,13 +233,20 @@
             this.txtCEP.Size = new System.Drawing.Size(100, 20);
             this.txtCEP.TabIndex = 5;
             // 
+            // txtRG
+            // 
+            this.txtRG.Location = new System.Drawing.Point(159, 102);
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(100, 20);
+            this.txtRG.TabIndex = 30;
+            // 
             // frmCadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 485);
-            this.Controls.Add(this.txtCEP);
             this.Controls.Add(this.txtRG);
+            this.Controls.Add(this.txtCEP);
             this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnCadastrar);
@@ -281,10 +261,8 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtRGdig);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label9);
@@ -318,9 +296,7 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.MaskedTextBox txtCPF;
-        private System.Windows.Forms.MaskedTextBox txtRG;
-        private System.Windows.Forms.TextBox txtRGdig;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.MaskedTextBox txtCEP;
+        private System.Windows.Forms.TextBox txtRG;
     }
 }
