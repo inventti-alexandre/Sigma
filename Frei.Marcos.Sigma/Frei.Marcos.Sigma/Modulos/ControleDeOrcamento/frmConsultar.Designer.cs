@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvFuncionario = new System.Windows.Forms.DataGridView();
-            this.txtCPF = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnProc = new System.Windows.Forms.Button();
             this.btnRem = new System.Windows.Forms.Button();
             this.btnAlter = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
@@ -63,31 +60,6 @@
             this.dgvFuncionario.Size = new System.Drawing.Size(650, 290);
             this.dgvFuncionario.TabIndex = 7;
             // 
-            // txtCPF
-            // 
-            this.txtCPF.Location = new System.Drawing.Point(161, 54);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(100, 20);
-            this.txtCPF.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Consultar CPF";
-            // 
-            // btnProc
-            // 
-            this.btnProc.Location = new System.Drawing.Point(267, 52);
-            this.btnProc.Name = "btnProc";
-            this.btnProc.Size = new System.Drawing.Size(75, 23);
-            this.btnProc.TabIndex = 8;
-            this.btnProc.Text = "Procurar";
-            this.btnProc.UseVisualStyleBackColor = true;
-            // 
             // btnRem
             // 
             this.btnRem.Location = new System.Drawing.Point(80, 425);
@@ -96,6 +68,7 @@
             this.btnRem.TabIndex = 9;
             this.btnRem.Text = "Remover";
             this.btnRem.UseVisualStyleBackColor = true;
+            this.btnRem.Click += new System.EventHandler(this.btnRem_Click);
             // 
             // btnAlter
             // 
@@ -105,6 +78,7 @@
             this.btnAlter.TabIndex = 10;
             this.btnAlter.Text = "Alterar";
             this.btnAlter.UseVisualStyleBackColor = true;
+            this.btnAlter.Click += new System.EventHandler(this.btnAlter_Click);
             // 
             // btnNovo
             // 
@@ -163,9 +137,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvFuncionario);
-            this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnProc);
             this.Controls.Add(this.btnRem);
             this.Controls.Add(this.btnAlter);
             this.Controls.Add(this.btnNovo);
@@ -173,16 +144,12 @@
             this.Size = new System.Drawing.Size(650, 500);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dgvFuncionario;
-        private System.Windows.Forms.TextBox txtCPF;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnProc;
         private System.Windows.Forms.Button btnRem;
         private System.Windows.Forms.Button btnAlter;
         private System.Windows.Forms.Button btnNovo;

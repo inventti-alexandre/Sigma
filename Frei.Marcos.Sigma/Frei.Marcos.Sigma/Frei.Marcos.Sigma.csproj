@@ -94,6 +94,12 @@
     <Compile Include="Modulos\ControleDeOrcamento\frmAdicionar.Designer.cs">
       <DependentUpon>frmAdicionar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\ControleDeOrcamento\frmAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeOrcamento\frmAlterar.Designer.cs">
+      <DependentUpon>frmAlterar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\ControleDeOrcamento\frmConsultar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeOrcamento\frmAdicionar.resx">
       <DependentUpon>frmAdicionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeOrcamento\frmAlterar.resx">
+      <DependentUpon>frmAlterar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeOrcamento\frmConsultar.resx">
       <DependentUpon>frmConsultar.cs</DependentUpon>

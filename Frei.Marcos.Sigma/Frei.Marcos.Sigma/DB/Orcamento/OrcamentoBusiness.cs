@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Frei.Marcos.Sigma.DB.Funcionario;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,16 @@ namespace Frei.Marcos.Sigma.DB.Orcamento
         {
             OrcamentoDatabase db = new OrcamentoDatabase();
             return db.SalvarOrc(dto);
+        }
+        public int RemoverOrcamento(string id)
+        {
+            OrcamentoDatabase db = new OrcamentoDatabase();
+            return db.RemoverOrcamento(id);
+        }
+        public List<OrcamentoDTO> ConsultarFuncionarios()
+        {
+            OrcamentoDatabase db = new OrcamentoDatabase();
+            return db.ConsultarFuncionarios();
         }
         public List<OrcamentoDTO> ConsultarOrc()
         {

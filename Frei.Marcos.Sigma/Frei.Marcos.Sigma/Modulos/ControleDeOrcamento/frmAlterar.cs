@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Frei.Marcos.Sigma.Modulos.ControleDeOrcamento
 {
-    public partial class frmAdicionar : Form
+    public partial class frmAlterar : Form
     {
-        public frmAdicionar()
+        public frmAlterar()
         {
             InitializeComponent();
             CarregarFuncionarios();
@@ -29,19 +29,12 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeOrcamento
             cboFunc.DataSource = business.ConsultarFuncionarios();
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        public void CarregarCampos(string Obs, string valor, bool aprovado)
         {
-            OrcamentoDTO dto = new OrcamentoDTO();
-            dto.funcionario_id_funcionario = Convert.ToInt32(cboFunc.SelectedValue);
-            dto.valor = Convert.ToDouble(txtValor.Text);
-            dto.situacao = rbnAprovado.Checked == true ? "Aprovado" : "Reprovado";
-            dto.descricao = txtDesc.Text;
-            dto.data = DateTime.Now;
-
-            OrcamentoBusiness business = new OrcamentoBusiness();
-            business.SalvarOrc(dto);
-
-            MessageBox.Show("Orçamento salvo com sucesso!", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txtDesc.Text = Obs;
+            txtValor.Text = valor;
+            if (aprovado)
+                rbnAprovado.Checked = true;
         }
     }
 }
