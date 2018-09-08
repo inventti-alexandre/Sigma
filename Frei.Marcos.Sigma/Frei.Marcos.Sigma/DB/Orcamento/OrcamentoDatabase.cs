@@ -1,4 +1,5 @@
 ﻿using Frei.Marcos.Sigma.DB.Funcionario;
+using Frei.Marcos.Sigma.DB.Pecas;
 using MySql.Data.MySqlClient;
 using Nsf._2018.Modulo3.App.DB.Base;
 using System;
@@ -11,13 +12,32 @@ namespace Frei.Marcos.Sigma.DB.Orcamento
 {
     class OrcamentoDatabase
     {
-        public int SalvarOrc(OrcamentoDTO dto)
+        public int GerarOrcamento()
         {
-            string script = @"INSERT orcamento(data, descricao, valor, situacao, funcionario_id_funcionario)
-                                        VALUES(@data, @descricao, @valor, @situacao, @funcionario_id_funcionario)";
+            string script = @"INSERT orcamento(data, situacao, descricao, valor)
+                                        VALUES(@data, @situacao, @descricao, @valor)";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("data", dto.data));
+            parms.Add(new MySqlParameter("data", DateTime.Now));
+            parms.Add(new MySqlParameter("situacao", "Reprovado"));
+            parms.Add(new MySqlParameter("descricao", string.Empty));
+            parms.Add(new MySqlParameter("valor", 1));
+
+            Database db = new Database();
+            return db.ExecuteInsertScriptWithPk(script, parms);
+        }
+
+        public int SalvarOrc(OrcamentoDTO dto)
+        {
+            string script = @"UPDATE orcamento SET descricao = @descricao, 
+                                                   valor = @valor,
+                                                situacao = @situacao,
+                              funcionario_id_funcionario = @funcionario_id_funcionario
+
+                                         WHERE id_orcamento = @id_orcamento";
+
+            List<MySqlParameter> parms = new List<MySqlParameter>();
+            parms.Add(new MySqlParameter("id_orcamento", dto.id_orcamento));
             parms.Add(new MySqlParameter("descricao", dto.descricao));
             parms.Add(new MySqlParameter("valor", dto.valor));
             parms.Add(new MySqlParameter("funcionario_id_funcionario", dto.funcionario_id_funcionario));
@@ -78,6 +98,51 @@ namespace Frei.Marcos.Sigma.DB.Orcamento
 
             reader.Close();
             return Orcamentos;
+        }
+
+        public double ConsultarValorPecas(string id)
+        {
+            string script = @"SELECT sum(valor) as valor FROM pecas WHERE orcamento_id_orcamento = @orcamento_id_orcamento";
+
+            List<MySqlParameter> parms = new List<MySqlParameter>();
+            parms.Add(new MySqlParameter("orcamento_id_orcamento", id));
+
+            Database db = new Database();
+            MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
+
+            double Valor = 0;
+            if (reader.Read())
+            {
+                Valor = reader.GetDouble("valor");
+            }
+
+            reader.Close();
+            return Valor;
+        }
+
+        public List<PecasDTO> ConsultarPecas(string id)
+        {
+            string script = $"SELECT * FROM pecas WHERE orcamento_id_orcamento = {id}";
+
+            List<MySqlParameter> parms = new List<MySqlParameter>();
+
+            Database db = new Database();
+            MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
+
+            List<PecasDTO> Pecas = new List<PecasDTO>();
+            while (reader.Read())
+            {
+                PecasDTO dados = new PecasDTO();
+                dados.descricao = reader.GetString("descricao");
+                dados.nome = reader.GetString("nome");
+                dados.quantidade = reader.GetInt32("quantidade");
+                dados.valor = reader.GetDouble("valor");
+
+                Pecas.Add(dados);
+            }
+
+            reader.Close();
+            return Pecas;
         }
 
         public int RemoverOrcamento(string id)

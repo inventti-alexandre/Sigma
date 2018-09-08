@@ -28,11 +28,14 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeOrcamento
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            frmAdicionar frm = new frmAdicionar();
+            OrcamentoBusiness db = new OrcamentoBusiness();
+            int id = db.GerarOrcamento();
+
+            frmAddPecas frm = new frmAddPecas();
             Hide();
+            frm.CarregarLabel(id.ToString());
             frm.ShowDialog();
             Show();
-            CarregarGrid();
         }
 
         private void btnAlter_Click(object sender, EventArgs e)
