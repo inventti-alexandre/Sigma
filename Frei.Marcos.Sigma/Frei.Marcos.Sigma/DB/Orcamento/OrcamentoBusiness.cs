@@ -9,6 +9,11 @@ namespace Frei.Marcos.Sigma.DB.Orcamento
 {
     class OrcamentoBusiness
     {
+        public int GerarOrcamento()
+        {
+            OrcamentoDatabase db = new OrcamentoDatabase();
+            return db.GerarOrcamento();
+        }
         public int SalvarOrc(OrcamentoDTO dto)
         {
             OrcamentoDatabase db = new OrcamentoDatabase();

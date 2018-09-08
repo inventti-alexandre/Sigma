@@ -54,7 +54,6 @@
     <Compile Include="APIs\Correio\CorreioDTO.cs" />
     <Compile Include="APIs\Correio\CorreioModel.cs" />
     <Compile Include="DB\Atendimento\AtendimentoDTO.cs" />
-    <Compile Include="DB\Base\BasesDTO.cs" />
     <Compile Include="DB\Base\Connection.cs" />
     <Compile Include="DB\Base\Database.cs" />
     <Compile Include="DB\Cliente\ClienteBusiness.cs" />
@@ -66,6 +65,8 @@
     <Compile Include="DB\Orcamento\OrcamentoBusiness.cs" />
     <Compile Include="DB\Orcamento\OrcamentoDatabase.cs" />
     <Compile Include="DB\Orcamento\OrcamentoDTO.cs" />
+    <Compile Include="DB\Pecas\PecasBusiness.cs" />
+    <Compile Include="DB\Pecas\PecasDatabase.cs" />
     <Compile Include="DB\Pecas\PecasDTO.cs" />
     <Compile Include="DB\Veiculos\VeiculosDTO.cs" />
     <Compile Include="frmPrincipal.cs">
@@ -110,6 +111,12 @@
     <Compile Include="Modulos\ControleDeFuncionario\frmConsultar.Designer.cs">
       <DependentUpon>frmConsultar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\ControleDeOrcamento\frmAddPecas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeOrcamento\frmAddPecas.Designer.cs">
+      <DependentUpon>frmAddPecas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\ControleDeOrcamento\frmAdicionar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeFuncionario\frmConsultar.resx">
       <DependentUpon>frmConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeOrcamento\frmAddPecas.resx">
+      <DependentUpon>frmAddPecas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeOrcamento\frmAdicionar.resx">
       <DependentUpon>frmAdicionar.cs</DependentUpon>

@@ -73,3 +73,8 @@ cor VARCHAR(5) NULL,
 cliente_id_cliente INT NULL,
 PRIMARY KEY (id_veiculos),
 FOREIGN KEY (cliente_id_cliente) REFERENCES Cliente (idCliente));
+
+CREATE VIEW vw_Orcamento_Funcionario AS
+	SELECT orcamento.*, Funcionario.Nome, Funcionario.Cargo FROM orcamento JOIN Funcionario ON funcionario_id_funcionario = idFuncionario;
+    
+Select * From vw_Orcamento_Funcionario;
