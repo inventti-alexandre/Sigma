@@ -74,6 +74,24 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\ControleDeCliente\frmClienteAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeCliente\frmClienteAlterar.Designer.cs">
+      <DependentUpon>frmClienteAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ControleDeCliente\frmClienteCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeCliente\frmClienteCadastrar.Designer.cs">
+      <DependentUpon>frmClienteCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ControleDeCliente\frmClienteConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeCliente\frmClienteConsultar.Designer.cs">
+      <DependentUpon>frmClienteConsultar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\ControleDeFuncionario\frmAlterar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +132,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeCliente\frmClienteAlterar.resx">
+      <DependentUpon>frmClienteAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeCliente\frmClienteCadastrar.resx">
+      <DependentUpon>frmClienteCadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeFuncionario\frmAlterar.resx">
       <DependentUpon>frmAlterar.cs</DependentUpon>
@@ -156,9 +180,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modulos\ControleDeCliente\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="DB\Script BD.txt" />
   </ItemGroup>
