@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace Frei.Marcos.Sigma.Modulos.ControleDEVeiculo
 {
-    public partial class frmCadastrarVeiculo : Form
+    public partial class frmAlterarVeiculo : Form
     {
-        public frmCadastrarVeiculo()
+        public frmAlterarVeiculo()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void alterar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -27,13 +27,9 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDEVeiculo
                 dto.modelo = textBox4.Text;
                 dto.cor = textBox5.Text;
                 dto.marca = textBox3.Text;
+                business.AlterarVeiculo(dto);
 
-
-
-                VeiculoBusiness business = new VeiculoBusiness();
-                business.CadastrarVeiculo(dto);
-
-                MessageBox.Show("Veiculo Cadastrado", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Veiculo Alterado", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (ArgumentException ex)
             {
@@ -45,10 +41,11 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDEVeiculo
             }
         }
 
-
-        private void frmCadastrarVeiculo_Load(object sender, EventArgs e)
+        private void frmAlterar_Load(object sender, EventArgs e)
         {
 
         }
     }
 }
+
+
