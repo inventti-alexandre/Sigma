@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Frei.Marcos.Sigma.DB.Veiculos
 {
-    class VeiculosDTO
+    class VeiculoDTO
     {
         public int id_veiculos { get; set; }
         public string placa { get; set; }
