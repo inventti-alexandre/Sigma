@@ -1,5 +1,4 @@
-﻿using Frei.Marcos.Sigma.Modulos.ControleDeFuncionario;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +19,7 @@ namespace Frei.Marcos.Sigma
 
         private void funcionarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmConsultar screen = new frmConsultar();
+            Modulos.ControleDeFuncionario.frmConsultar screen = new Modulos.ControleDeFuncionario.frmConsultar();
             CarregarScreen(screen);
         }
 
@@ -29,6 +28,12 @@ namespace Frei.Marcos.Sigma
             if (pnPrincipal.Controls.Count == 1)
                 pnPrincipal.Controls.RemoveAt(0);
             pnPrincipal.Controls.Add(screen);
+        }
+
+        private void orçamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Modulos.ControleDeOrcamento.frmConsultar screen = new Modulos.ControleDeOrcamento.frmConsultar();
+            CarregarScreen(screen);
         }
     }
 }

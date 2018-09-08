@@ -1,5 +1,4 @@
 ﻿using Frei.Marcos.Sigma.APIs.Correio;
-using Frei.Marcos.Sigma.APIs.CPF;
 using Frei.Marcos.Sigma.DB.Funcionario;
 using System;
 using System.Collections.Generic;
