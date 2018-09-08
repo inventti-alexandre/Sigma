@@ -135,6 +135,24 @@
     <Compile Include="Modulos\ControleDeOrcamento\frmConsultar.Designer.cs">
       <DependentUpon>frmConsultar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\ControleDEVeiculo\frmCadastrarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDEVeiculo\frmCadastrarVeiculo.Designer.cs">
+      <DependentUpon>frmCadastrarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ControleDEVeiculo\frmConsultarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDEVeiculo\frmConsultarVeiculo.Designer.cs">
+      <DependentUpon>frmConsultarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ControleDEVeiculo\frmRemoverVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDEVeiculo\frmRemoverVeiculo.Designer.cs">
+      <DependentUpon>frmRemoverVeiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
@@ -145,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeCliente\frmClienteCadastrar.resx">
       <DependentUpon>frmClienteCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeCliente\frmClienteConsultar.resx">
+      <DependentUpon>frmClienteConsultar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeFuncionario\frmAlterar.resx">
       <DependentUpon>frmAlterar.cs</DependentUpon>

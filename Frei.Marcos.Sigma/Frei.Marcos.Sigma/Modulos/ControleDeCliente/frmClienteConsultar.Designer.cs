@@ -28,8 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmClienteConsultar
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "frmClienteConsultar";
+            this.Size = new System.Drawing.Size(743, 464);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
