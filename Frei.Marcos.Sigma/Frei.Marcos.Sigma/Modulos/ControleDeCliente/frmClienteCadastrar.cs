@@ -35,10 +35,10 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeCliente
                 dto.telefone = textBox12.Text;
                 dto.celular = textBox13.Text;
 
-                VeiculoBusiness business = new VeiculoBusiness();
-                business.CadastrarFuncionario(dto);
+                ClienteBusiness business = new ClienteBusiness();
+                business.CadastrarVeiculo(dto);
 
-                MessageBox.Show("Funcionario Cadastrado", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Veiculo Cadastrado", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (ArgumentException ex)
             {
