@@ -54,15 +54,15 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeCliente
         {
             try
             {
-                string CEP = txtCEP.Text;
+                string CEP = textBox6.Text;
 
                 CorreioBusiness business = new CorreioBusiness();
                 CorreioDTO dto = business.Endereco(CEP);
 
                 if (dto.CEP != string.Empty)
                 {
-                    txtComplemento.Text = dto.Complemento;
-                    txtEndereco.Text = $"Logradouro: {dto.Logradouro}, Cidade: {dto.Localidade}, Bairro: {dto.Bairro}, UF: {dto.UF}";
+
+                    textBox10.Text = $"Logradouro: {dto.Logradouro}, Cidade: {dto.Localidade}, Bairro: {dto.Bairro}, UF: {dto.UF}";
                 }
                 else
                     throw new ArgumentException("CEP Inválido");
