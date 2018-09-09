@@ -57,5 +57,15 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeAtendimento
                 MessageBox.Show("Selecione um atendimento!", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void frmConsultar_Load(object sender, EventArgs e)
+        {
+            ''
+        }
+
+        private void dgvAtendimento_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

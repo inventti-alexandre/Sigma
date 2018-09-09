@@ -56,5 +56,25 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeAtendimento
 
             MessageBox.Show("Atendimento cadastrado com sucesso!", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+
+        private void frmAdicionar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDesc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmAdicionar_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
