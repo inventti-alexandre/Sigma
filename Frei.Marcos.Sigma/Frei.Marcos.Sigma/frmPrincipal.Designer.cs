@@ -34,9 +34,11 @@
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnPrincipal = new System.Windows.Forms.Panel();
             this.serviçosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.atendimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orçamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnPrincipal = new System.Windows.Forms.Panel();
+            this.veiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +72,8 @@
             // 
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.funcionarioToolStripMenuItem,
-            this.clienteToolStripMenuItem});
+            this.clienteToolStripMenuItem,
+            this.veiculoToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
@@ -78,15 +81,39 @@
             // funcionarioToolStripMenuItem
             // 
             this.funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
-            this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.funcionarioToolStripMenuItem.Text = "Funcionario";
             this.funcionarioToolStripMenuItem.Click += new System.EventHandler(this.funcionarioToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
+            // 
+            // serviçosToolStripMenuItem
+            // 
+            this.serviçosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.atendimentoToolStripMenuItem,
+            this.orçamentoToolStripMenuItem});
+            this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
+            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.serviçosToolStripMenuItem.Text = "Serviços";
+            // 
+            // atendimentoToolStripMenuItem
+            // 
+            this.atendimentoToolStripMenuItem.Name = "atendimentoToolStripMenuItem";
+            this.atendimentoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.atendimentoToolStripMenuItem.Text = "Atendimento";
+            this.atendimentoToolStripMenuItem.Click += new System.EventHandler(this.atendimentoToolStripMenuItem_Click);
+            // 
+            // orçamentoToolStripMenuItem
+            // 
+            this.orçamentoToolStripMenuItem.Name = "orçamentoToolStripMenuItem";
+            this.orçamentoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.orçamentoToolStripMenuItem.Text = "Orçamento";
+            this.orçamentoToolStripMenuItem.Click += new System.EventHandler(this.orçamentoToolStripMenuItem_Click);
             // 
             // pnPrincipal
             // 
@@ -95,20 +122,12 @@
             this.pnPrincipal.Size = new System.Drawing.Size(650, 500);
             this.pnPrincipal.TabIndex = 2;
             // 
-            // serviçosToolStripMenuItem
+            // veiculoToolStripMenuItem
             // 
-            this.serviçosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.orçamentoToolStripMenuItem});
-            this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
-            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.serviçosToolStripMenuItem.Text = "Serviços";
-            // 
-            // orçamentoToolStripMenuItem
-            // 
-            this.orçamentoToolStripMenuItem.Name = "orçamentoToolStripMenuItem";
-            this.orçamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.orçamentoToolStripMenuItem.Text = "Orçamento";
-            this.orçamentoToolStripMenuItem.Click += new System.EventHandler(this.orçamentoToolStripMenuItem_Click);
+            this.veiculoToolStripMenuItem.Name = "veiculoToolStripMenuItem";
+            this.veiculoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.veiculoToolStripMenuItem.Text = "Veiculo";
+            this.veiculoToolStripMenuItem.Click += new System.EventHandler(this.veiculoToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -139,6 +158,8 @@
         private System.Windows.Forms.Panel pnPrincipal;
         private System.Windows.Forms.ToolStripMenuItem serviçosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem orçamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem atendimentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem veiculoToolStripMenuItem;
     }
 }
 

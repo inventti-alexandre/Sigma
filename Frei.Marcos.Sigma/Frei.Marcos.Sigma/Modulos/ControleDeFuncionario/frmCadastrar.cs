@@ -29,7 +29,7 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeFuncionario
             try
             {
                 FuncionarioDTO dto = new FuncionarioDTO();
-                dto.Nome = txtName.Text;
+                dto.NomeF = txtName.Text;
                 dto.Usuario = txtUsuario.Text;
                 dto.Cargo = txtCargo.Text;
                 dto.Complemento = txtComplemento.Text;

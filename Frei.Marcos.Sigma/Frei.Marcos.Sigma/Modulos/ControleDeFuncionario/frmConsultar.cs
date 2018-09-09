@@ -31,7 +31,7 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeFuncionario
                 FuncionarioDTO dto = dgvFuncionario.CurrentRow.DataBoundItem as FuncionarioDTO;
 
                 frmAlterar alterar = new frmAlterar();
-                alterar.CarregarCampos(dto.idFuncionario, dto.CPF, dto.Usuario, dto.Nome, dto.Endereco, dto.Complemento, dto.Cargo, dto.observacao, dto.Data_nascimento, dto.RG);
+                alterar.CarregarCampos(dto.idFuncionario, dto.CPF, dto.Usuario, dto.NomeF, dto.Endereco, dto.Complemento, dto.Cargo, dto.observacao, dto.Data_nascimento, dto.RG);
                 alterar.Show();
             }
             catch (ArgumentException ex)

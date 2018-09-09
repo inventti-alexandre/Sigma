@@ -37,7 +37,7 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeFuncionario
             {
                 FuncionarioDTO dto = new FuncionarioDTO();
                 dto.idFuncionario = Convert.ToInt32(lblId.Text);
-                dto.Nome = txtName.Text;
+                dto.NomeF = txtName.Text;
                 dto.Usuario = txtUsuario.Text;
                 dto.Cargo = txtCargo.Text;
                 dto.Complemento = txtComplemento.Text;

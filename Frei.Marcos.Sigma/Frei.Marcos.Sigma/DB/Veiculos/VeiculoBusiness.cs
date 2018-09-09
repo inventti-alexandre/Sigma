@@ -8,31 +8,28 @@ namespace Frei.Marcos.Sigma.DB.Veiculos
 {
     class VeiculoBusiness
     {
-        public int CadastrarVeiculo(VeiculoDTO dto)
+        public int SalvarVeiculo(VeiculoDTO dto)
         {
             VeiculoDatabase db = new VeiculoDatabase();
-            return db.CadastrarVeiculo(dto);
+            return db.SalvarVeiculo(dto);
         }
 
-        public List<VeiculoDTO> ConsultarVeiculo(string placa)
-        {
-            VeiculoDatabase db = new VeiculoDatabase();
-            if (placa != string.Empty)
-            {
-                return db.ConsultarVeiculoFiltro(placa);
-            }
-            else
-                return db.ConsultarVeiculo();
-        }
-        public int RemoverVeiculo(string id)
-        {
-            VeiculoDatabase db = new VeiculoDatabase();
-            return db.RemoverVeiculo(id);
-        }
         public int AlterarVeiculo(VeiculoDTO dto)
         {
             VeiculoDatabase db = new VeiculoDatabase();
             return db.AlterarVeiculo(dto);
+        }
+
+        public int RemoverVaiculo(string id)
+        {
+            VeiculoDatabase db = new VeiculoDatabase();
+            return db.RemoverVaiculo(id);
+        }
+
+        public List<VeiculoDTO> ConsultarVeiculo()
+        {
+            VeiculoDatabase db = new VeiculoDatabase();
+            return db.ConsultarVeiculo();
         }
     }
 }

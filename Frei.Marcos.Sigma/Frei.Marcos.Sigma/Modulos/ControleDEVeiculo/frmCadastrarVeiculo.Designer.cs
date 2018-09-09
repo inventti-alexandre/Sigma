@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.txtCor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.cboCli = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -52,42 +51,37 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // txtPlaca
             // 
-            this.textBox2.Location = new System.Drawing.Point(149, 98);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtPlaca.Location = new System.Drawing.Point(149, 102);
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(100, 20);
+            this.txtPlaca.TabIndex = 1;
+            this.txtPlaca.TextChanged += new System.EventHandler(this.txtPlaca_TextChanged);
             // 
-            // textBox3
+            // txtMarca
             // 
-            this.textBox3.Location = new System.Drawing.Point(149, 124);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtMarca.Location = new System.Drawing.Point(149, 128);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(100, 20);
+            this.txtMarca.TabIndex = 1;
+            this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
             // 
-            // textBox4
+            // txtModelo
             // 
-            this.textBox4.Location = new System.Drawing.Point(149, 150);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 1;
+            this.txtModelo.Location = new System.Drawing.Point(149, 154);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(100, 20);
+            this.txtModelo.TabIndex = 1;
+            this.txtModelo.TextChanged += new System.EventHandler(this.txtModelo_TextChanged);
             // 
-            // textBox5
+            // txtCor
             // 
-            this.textBox5.Location = new System.Drawing.Point(149, 176);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(74, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "id veiculo";
+            this.txtCor.Location = new System.Drawing.Point(149, 180);
+            this.txtCor.Name = "txtCor";
+            this.txtCor.Size = new System.Drawing.Size(100, 20);
+            this.txtCor.TabIndex = 1;
+            this.txtCor.TextChanged += new System.EventHandler(this.txtCor_TextChanged);
             // 
             // label2
             // 
@@ -97,6 +91,7 @@
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Placa";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -106,6 +101,7 @@
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Marca";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -115,6 +111,7 @@
             this.label4.Size = new System.Drawing.Size(42, 13);
             this.label4.TabIndex = 2;
             this.label4.Text = "Modelo";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -124,39 +121,43 @@
             this.label5.Size = new System.Drawing.Size(23, 13);
             this.label5.TabIndex = 2;
             this.label5.Text = "Cor";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox6
+            // cboCli
             // 
-            this.textBox6.Location = new System.Drawing.Point(149, 202);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 1;
+            this.cboCli.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCli.FormattingEnabled = true;
+            this.cboCli.Location = new System.Drawing.Point(149, 207);
+            this.cboCli.Name = "cboCli";
+            this.cboCli.Size = new System.Drawing.Size(208, 21);
+            this.cboCli.TabIndex = 36;
+            this.cboCli.SelectedIndexChanged += new System.EventHandler(this.cboCli_SelectedIndexChanged);
             // 
-            // label6
+            // label1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(74, 209);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "id Cliente";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(74, 210);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Cliente";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmCadastrarVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cboCli);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCor);
+            this.Controls.Add(this.txtModelo);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.txtPlaca);
             this.Controls.Add(this.button1);
             this.Name = "frmCadastrarVeiculo";
             this.Text = "frmCadastrarVeiculo";
@@ -169,16 +170,15 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtPlaca;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.TextBox txtCor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cboCli;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -12,12 +12,12 @@ namespace Frei.Marcos.Sigma.DB.Funcionario
     {
         public int CadastrarFuncionario(FuncionarioDTO dto)
         {
-            string script = @"INSERT Funcionario(Usuario, Nome, Data_nascimento, CPF, RG, Endereco, Complemento, Cargo, observacao)
-                                          VALUES(@Usuario, @Nome, @Data_nascimento, @CPF, @RG, @Endereco, @Complemento, @Cargo, @observacao)";
+            string script = @"INSERT Funcionario(Usuario, NomeF, Data_nascimento, CPF, RG, Endereco, Complemento, Cargo, observacao)
+                                          VALUES(@Usuario, @NomeF, @Data_nascimento, @CPF, @RG, @Endereco, @Complemento, @Cargo, @observacao)";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
             parms.Add(new MySqlParameter("Usuario", dto.Usuario));
-            parms.Add(new MySqlParameter("Nome", dto.Nome));
+            parms.Add(new MySqlParameter("NomeF", dto.NomeF));
             parms.Add(new MySqlParameter("Data_nascimento", dto.Data_nascimento));
             parms.Add(new MySqlParameter("CPF", dto.CPF));
             parms.Add(new MySqlParameter("RG", dto.RG));
@@ -45,7 +45,7 @@ namespace Frei.Marcos.Sigma.DB.Funcionario
                 FuncionarioDTO dados = new FuncionarioDTO();
                 dados.idFuncionario = reader.GetInt32("idFuncionario");
                 dados.Usuario = reader.GetString("Usuario");
-                dados.Nome = reader.GetString("Nome");
+                dados.NomeF = reader.GetString("NomeF");
                 dados.Data_nascimento = reader.GetDateTime("Data_nascimento");
                 dados.CPF = reader.GetString("CPF");
                 dados.RG = reader.GetString("RG");
@@ -75,7 +75,7 @@ namespace Frei.Marcos.Sigma.DB.Funcionario
         public int AlterarFuncionario(FuncionarioDTO dto)
         {
             string script = @"UPDATE Funcionario SET Usuario = @Usuario,
-                                                        Nome = @Nome,
+                                                       NomeF = @NomeF,
                                              Data_nascimento = @Data_nascimento,
                                                          CPF = @CPF,
                                                           RG = @RG,
@@ -89,7 +89,7 @@ namespace Frei.Marcos.Sigma.DB.Funcionario
             List<MySqlParameter> parms = new List<MySqlParameter>();
             parms.Add(new MySqlParameter("idFuncionario", dto.idFuncionario));
             parms.Add(new MySqlParameter("Usuario", dto.Usuario));
-            parms.Add(new MySqlParameter("Nome", dto.Nome));
+            parms.Add(new MySqlParameter("NomeF", dto.NomeF));
             parms.Add(new MySqlParameter("Data_nascimento", dto.Data_nascimento));
             parms.Add(new MySqlParameter("CPF", dto.CPF));
             parms.Add(new MySqlParameter("RG", dto.RG));
@@ -117,7 +117,7 @@ namespace Frei.Marcos.Sigma.DB.Funcionario
                 FuncionarioDTO dados = new FuncionarioDTO();
                 dados.idFuncionario = reader.GetInt32("idFuncionario");
                 dados.Usuario = reader.GetString("Usuario");
-                dados.Nome = reader.GetString("Nome");
+                dados.NomeF = reader.GetString("NomeF");
                 dados.Data_nascimento = reader.GetDateTime("Data_nascimento");
                 dados.CPF = reader.GetString("CPF");
                 dados.RG = reader.GetString("RG");

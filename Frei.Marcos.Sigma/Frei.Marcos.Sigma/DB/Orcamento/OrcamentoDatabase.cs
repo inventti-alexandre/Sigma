@@ -61,7 +61,7 @@ namespace Frei.Marcos.Sigma.DB.Orcamento
             {
                 OrcamentoDTO dados = new OrcamentoDTO();
                 dados.funcionario_id_funcionario = reader.GetInt32("idFuncionario");
-                dados.Nome = reader.GetString("Nome");
+                dados.Nome = reader.GetString("NomeF");
                 dados.Cargo = reader.GetString("Cargo");
 
                 Funcionarios.Add(dados);
@@ -90,7 +90,7 @@ namespace Frei.Marcos.Sigma.DB.Orcamento
                 dados.valor = reader.GetInt32("valor");
                 dados.situacao = reader.GetString("situacao");
                 dados.funcionario_id_funcionario = reader.GetInt32("funcionario_id_funcionario");
-                dados.Nome = reader.GetString("Nome");
+                dados.Nome = reader.GetString("NomeF");
                 dados.Cargo = reader.GetString("Cargo");
 
                 Orcamentos.Add(dados);

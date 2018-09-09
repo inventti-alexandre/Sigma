@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Frei.Marcos.Sigma.DB.Orcamento;
+using Frei.Marcos.Sigma.DB.Atendimento;
 
-namespace Frei.Marcos.Sigma.Modulos.ControleDeOrcamento
+namespace Frei.Marcos.Sigma.Modulos.ControleDeAtendimento
 {
     public partial class frmConsultar : UserControl
     {
@@ -21,33 +21,31 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeOrcamento
 
         private void CarregarGrid()
         {
-            OrcamentoBusiness business = new OrcamentoBusiness();
-            dgvFuncionario.AutoGenerateColumns = false;
-            dgvFuncionario.DataSource = business.ConsultarOrc();
+            AtendimentoBusiness business = new AtendimentoBusiness();
+
+            dgvAtendimento.AutoGenerateColumns = false;
+            dgvAtendimento.DataSource = business.ListarAtendimentos();
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            OrcamentoBusiness db = new OrcamentoBusiness();
-            int id = db.GerarOrcamento();
-
-            frmAddPecas frm = new frmAddPecas();
+            frmAdicionar frm = new frmAdicionar();
             Hide();
-            frm.CarregarLabel(id.ToString());
             frm.ShowDialog();
             Show();
+            CarregarGrid();
         }
 
         private void btnRem_Click(object sender, EventArgs e)
         {
             try
             {
-                OrcamentoDTO dto = dgvFuncionario.CurrentRow.DataBoundItem as OrcamentoDTO;
+                vw_AtendimentoDTO dto = dgvAtendimento.CurrentRow.DataBoundItem as vw_AtendimentoDTO;
 
-                OrcamentoBusiness business = new OrcamentoBusiness();
-                business.RemoverOrcamento(dto.id_orcamento.ToString());
+                AtendimentoBusiness business = new AtendimentoBusiness();
+                business.RemoverAtendimento(dto.idAtendimento.ToString());
 
-                MessageBox.Show("Orçamento Removido com Sucesso!", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Atendimento Removido com Sucesso!", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 CarregarGrid();
             }
             catch (ArgumentException ex)
@@ -56,7 +54,7 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeOrcamento
             }
             catch (Exception)
             {
-                MessageBox.Show("Selecione um Orcamento!", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Selecione um atendimento!", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -1,4 +1,5 @@
-﻿using Frei.Marcos.Sigma.DB.Cliente;
+﻿using Frei.Marcos.Sigma.APIs.Correio;
+using Frei.Marcos.Sigma.DB.Cliente;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,27 +19,79 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeCliente
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string CEP = txtCEP.Text;
+
+                CorreioBusiness business = new CorreioBusiness();
+                CorreioDTO dto = business.Endereco(CEP);
+
+                if (dto.CEP != string.Empty)
+                {
+                    txtBairro.Text = dto.Bairro;
+                    txtCidade.Text = dto.Localidade;
+                    txtLogradouro.Text = dto.Logradouro;
+                    txtUF.Text = dto.UF;
+                }
+                else
+                    throw new ArgumentException("CEP Inválido");
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSearchJ_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string CEP = txtCEPj.Text;
+
+                CorreioBusiness business = new CorreioBusiness();
+                CorreioDTO dto = business.Endereco(CEP);
+
+                if (dto.CEP != string.Empty)
+                {
+                    txtBairroJ.Text = dto.Bairro;
+                    txtCidadeJ.Text = dto.Localidade;
+                    txtLogradouroJ.Text = dto.Logradouro;
+                    txtUFj.Text = dto.UF;
+                }
+                else
+                    throw new ArgumentException("CEP Inválido");
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
             try
             {
                 ClienteDTO dto = new ClienteDTO();
-                dto.CPF_CNPJ = textBox3.Text;
-                dto.razao_social = textBox5.Text;
-                dto.nome = textBox2.Text;
-                dto.cep = textBox6.Text;
+                dto.bairro = txtBairro.Text;
+                dto.celular = txtCelular.Text;
+                dto.razao_social = string.Empty;
+                dto.cep = txtCEP.Text;
+                dto.cidade = txtCidade.Text;
+                dto.CPF_CNPJ = txtCPF.Text;
                 dto.Data_nascimento = dtpNasc.Value;
-                dto.estado = textBox7.Text;
-                dto.cidade = textBox8.Text;
-                dto.bairro = textBox9.Text;
-                dto.endereco = textBox10.Text;
-                dto.telefone = textBox12.Text;
-                dto.celular = textBox13.Text;
+                dto.endereco = txtLogradouro.Text;
+                dto.estado = txtUF.Text;
+                dto.nome = txtNome.Text;
+                dto.telefone = txtTelefone.Text;
 
-                ClienteBusiness business = new ClienteBusiness();
-                business.CadastrarVeiculo(dto);
+                ClienteBusiness db = new ClienteBusiness();
+                db.Cadastrar(dto);
 
-                MessageBox.Show("Veiculo Cadastrado", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cliente cadastrado com sucesso!", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Close();
             }
             catch (ArgumentException ex)
             {
@@ -50,26 +103,36 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeCliente
             }
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void btnCadastrarJ_Click(object sender, EventArgs e)
         {
             try
             {
-                string CEP = textBox6.Text;
+                ClienteDTO dto = new ClienteDTO();
+                dto.bairro = txtBairroJ.Text;
+                dto.celular = txtCelularJ.Text;
+                dto.cep = txtCEPj.Text;
+                dto.cidade = txtCidadeJ.Text;
+                dto.CPF_CNPJ = txtCNPJ.Text;
+                dto.endereco = txtLogradouroJ.Text;
+                dto.estado = txtUFj.Text;
+                dto.nome = txtNomeJ.Text;
+                dto.telefone = txtTelefoneJ.Text;
+                dto.razao_social = txtRazaoSocial.Text;
 
-                CorreioBusiness business = new CorreioBusiness();
-                CorreioDTO dto = business.Endereco(CEP);
+                ClienteBusiness db = new ClienteBusiness();
+                db.CadastrarJ(dto);
 
-                if (dto.CEP != string.Empty)
-                {
+                MessageBox.Show("Cliente cadastrado com sucesso!", "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    textBox10.Text = $"Logradouro: {dto.Logradouro}, Cidade: {dto.Localidade}, Bairro: {dto.Bairro}, UF: {dto.UF}";
-                }
-                else
-                    throw new ArgumentException("CEP Inválido");
+                Close();
             }
             catch (ArgumentException ex)
             {
                 MessageBox.Show(ex.Message, "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro: " + ex.Message, "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

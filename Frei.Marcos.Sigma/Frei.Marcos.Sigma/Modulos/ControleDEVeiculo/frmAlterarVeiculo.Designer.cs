@@ -28,136 +28,149 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label6 = new System.Windows.Forms.Label();
+            this.cboCli = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.alterar = new System.Windows.Forms.Button();
+            this.txtCor = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblid = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label6
+            // cboCli
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(55, 200);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "id Cliente";
+            this.cboCli.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCli.FormattingEnabled = true;
+            this.cboCli.Location = new System.Drawing.Point(334, 219);
+            this.cboCli.Name = "cboCli";
+            this.cboCli.Size = new System.Drawing.Size(208, 21);
+            this.cboCli.TabIndex = 47;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(259, 222);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Cliente";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(55, 174);
+            this.label5.Location = new System.Drawing.Point(259, 195);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(23, 13);
-            this.label5.TabIndex = 9;
+            this.label5.TabIndex = 42;
             this.label5.Text = "Cor";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(55, 148);
+            this.label4.Location = new System.Drawing.Point(259, 169);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 10;
+            this.label4.TabIndex = 43;
             this.label4.Text = "Modelo";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 122);
+            this.label3.Location = new System.Drawing.Point(259, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 11;
+            this.label3.TabIndex = 44;
             this.label3.Text = "Marca";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 96);
+            this.label2.Location = new System.Drawing.Point(259, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
-            this.label2.TabIndex = 12;
+            this.label2.TabIndex = 45;
             this.label2.Text = "Placa";
             // 
-            // label1
+            // txtCor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "id veiculo";
+            this.txtCor.Location = new System.Drawing.Point(334, 192);
+            this.txtCor.Name = "txtCor";
+            this.txtCor.Size = new System.Drawing.Size(100, 20);
+            this.txtCor.TabIndex = 38;
             // 
-            // textBox6
+            // txtModelo
             // 
-            this.textBox6.Location = new System.Drawing.Point(130, 193);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 3;
+            this.txtModelo.Location = new System.Drawing.Point(334, 166);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(100, 20);
+            this.txtModelo.TabIndex = 39;
             // 
-            // textBox5
+            // txtMarca
             // 
-            this.textBox5.Location = new System.Drawing.Point(130, 167);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.txtMarca.Location = new System.Drawing.Point(334, 140);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(100, 20);
+            this.txtMarca.TabIndex = 40;
             // 
-            // textBox4
+            // txtPlaca
             // 
-            this.textBox4.Location = new System.Drawing.Point(130, 141);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 5;
+            this.txtPlaca.Location = new System.Drawing.Point(334, 114);
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(100, 20);
+            this.txtPlaca.TabIndex = 41;
             // 
-            // textBox3
+            // btnAlterar
             // 
-            this.textBox3.Location = new System.Drawing.Point(130, 115);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.btnAlterar.Location = new System.Drawing.Point(334, 314);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
+            this.btnAlterar.TabIndex = 37;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
-            // textBox2
+            // label6
             // 
-            this.textBox2.Location = new System.Drawing.Point(130, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 7;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(245, 92);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 13);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "Código Veiculo";
             // 
-            // alterar
+            // lblid
             // 
-            this.alterar.Location = new System.Drawing.Point(106, 346);
-            this.alterar.Name = "alterar";
-            this.alterar.Size = new System.Drawing.Size(101, 46);
-            this.alterar.TabIndex = 14;
-            this.alterar.Text = "Alterar";
-            this.alterar.UseVisualStyleBackColor = true;
-            this.alterar.Click += new System.EventHandler(this.alterar_Click);
+            this.lblid.AutoSize = true;
+            this.lblid.Location = new System.Drawing.Point(331, 92);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(13, 13);
+            this.lblid.TabIndex = 45;
+            this.lblid.Text = "0";
             // 
             // frmAlterarVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.alterar);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cboCli);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblid);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCor);
+            this.Controls.Add(this.txtModelo);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.txtPlaca);
+            this.Controls.Add(this.btnAlterar);
             this.Name = "frmAlterarVeiculo";
             this.Text = "frmRemoverVeiculo";
             this.ResumeLayout(false);
@@ -167,17 +180,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cboCli;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button alterar;
+        private System.Windows.Forms.TextBox txtCor;
+        private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.TextBox txtPlaca;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblid;
     }
 }

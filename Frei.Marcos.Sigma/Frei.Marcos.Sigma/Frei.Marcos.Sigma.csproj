@@ -53,7 +53,10 @@
     <Compile Include="APIs\Correio\CorreioBusiness.cs" />
     <Compile Include="APIs\Correio\CorreioDTO.cs" />
     <Compile Include="APIs\Correio\CorreioModel.cs" />
+    <Compile Include="DB\Atendimento\AtendimentoBusiness.cs" />
+    <Compile Include="DB\Atendimento\AtendimentoDatabase.cs" />
     <Compile Include="DB\Atendimento\AtendimentoDTO.cs" />
+    <Compile Include="DB\Atendimento\vw_AtendimentoDTO.cs" />
     <Compile Include="DB\Base\Connection.cs" />
     <Compile Include="DB\Base\Database.cs" />
     <Compile Include="DB\Cliente\ClienteBusiness.cs" />
@@ -77,11 +80,17 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\ControleDeCliente\frmClienteAlterar.cs">
+    <Compile Include="Modulos\ControleDeAtendimento\frmAdicionar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\ControleDeCliente\frmClienteAlterar.Designer.cs">
-      <DependentUpon>frmClienteAlterar.cs</DependentUpon>
+    <Compile Include="Modulos\ControleDeAtendimento\frmAdicionar.Designer.cs">
+      <DependentUpon>frmAdicionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ControleDeAtendimento\frmConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeAtendimento\frmConsultar.Designer.cs">
+      <DependentUpon>frmConsultar.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\ControleDeCliente\frmClienteCadastrar.cs">
       <SubType>Form</SubType>
@@ -125,23 +134,17 @@
     <Compile Include="Modulos\ControleDeOrcamento\frmAdicionar.Designer.cs">
       <DependentUpon>frmAdicionar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\ControleDeOrcamento\frmAlterar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modulos\ControleDeOrcamento\frmAlterar.Designer.cs">
-      <DependentUpon>frmAlterar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modulos\ControleDeOrcamento\frmConsultar.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Modulos\ControleDeOrcamento\frmConsultar.Designer.cs">
       <DependentUpon>frmConsultar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\ControleDEVeiculo\ConsultarVeiculocs.cs">
+    <Compile Include="Modulos\ControleDEVeiculo\frmConsultar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modulos\ControleDEVeiculo\ConsultarVeiculocs.Designer.cs">
-      <DependentUpon>ConsultarVeiculocs.cs</DependentUpon>
+    <Compile Include="Modulos\ControleDEVeiculo\frmConsultar.Designer.cs">
+      <DependentUpon>frmConsultar.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\ControleDEVeiculo\frmCadastrarVeiculo.cs">
       <SubType>Form</SubType>
@@ -160,8 +163,11 @@
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\ControleDeCliente\frmClienteAlterar.resx">
-      <DependentUpon>frmClienteAlterar.cs</DependentUpon>
+    <EmbeddedResource Include="Modulos\ControleDeAtendimento\frmAdicionar.resx">
+      <DependentUpon>frmAdicionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeAtendimento\frmConsultar.resx">
+      <DependentUpon>frmConsultar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeCliente\frmClienteCadastrar.resx">
       <DependentUpon>frmClienteCadastrar.cs</DependentUpon>
@@ -184,14 +190,11 @@
     <EmbeddedResource Include="Modulos\ControleDeOrcamento\frmAdicionar.resx">
       <DependentUpon>frmAdicionar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\ControleDeOrcamento\frmAlterar.resx">
-      <DependentUpon>frmAlterar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeOrcamento\frmConsultar.resx">
       <DependentUpon>frmConsultar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\ControleDEVeiculo\ConsultarVeiculocs.resx">
-      <DependentUpon>ConsultarVeiculocs.cs</DependentUpon>
+    <EmbeddedResource Include="Modulos\ControleDEVeiculo\frmConsultar.resx">
+      <DependentUpon>frmConsultar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDEVeiculo\frmCadastrarVeiculo.resx">
       <DependentUpon>frmCadastrarVeiculo.cs</DependentUpon>

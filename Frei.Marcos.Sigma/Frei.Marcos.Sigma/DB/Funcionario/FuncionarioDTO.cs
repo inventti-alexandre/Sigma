@@ -10,7 +10,7 @@ namespace Frei.Marcos.Sigma.DB.Funcionario
     {
         public int idFuncionario { get; set; }
         public string Usuario { get; set; }
-        public string Nome { get; set; }
+        public string NomeF { get; set; }
         public DateTime Data_nascimento { get; set; }
         public string CPF { get; set; }
         public string RG { get; set; }

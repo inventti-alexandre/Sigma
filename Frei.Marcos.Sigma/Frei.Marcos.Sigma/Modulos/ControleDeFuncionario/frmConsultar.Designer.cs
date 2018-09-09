@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.dgvFuncionario = new System.Windows.Forms.DataGridView();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.btnAlter = new System.Windows.Forms.Button();
+            this.btnProc = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnRem = new System.Windows.Forms.Button();
+            this.txtCPF = new System.Windows.Forms.TextBox();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,12 +44,6 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnNovo = new System.Windows.Forms.Button();
-            this.btnAlter = new System.Windows.Forms.Button();
-            this.btnProc = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnRem = new System.Windows.Forms.Button();
-            this.txtCPF = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,63 +66,6 @@
             this.dgvFuncionario.RowHeadersVisible = false;
             this.dgvFuncionario.Size = new System.Drawing.Size(650, 290);
             this.dgvFuncionario.TabIndex = 0;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Usuario";
-            this.Column2.HeaderText = "Usuario";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column1.DataPropertyName = "Nome";
-            this.Column1.HeaderText = "Nome";
-            this.Column1.MinimumWidth = 150;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Data_nascimento";
-            this.Column3.HeaderText = "Data de Nascimento";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "CPF";
-            this.Column4.HeaderText = "CPF";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "RG";
-            this.Column5.HeaderText = "RG";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "Endereco";
-            this.Column6.HeaderText = "Endereco";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "Complemento";
-            this.Column7.HeaderText = "Complemento";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "Cargo";
-            this.Column8.HeaderText = "Cargo";
-            this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "observacao";
-            this.Column9.HeaderText = "Observação";
-            this.Column9.Name = "Column9";
             // 
             // btnNovo
             // 
@@ -180,6 +123,63 @@
             this.txtCPF.Size = new System.Drawing.Size(100, 20);
             this.txtCPF.TabIndex = 6;
             // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Usuario";
+            this.Column2.HeaderText = "Usuario";
+            this.Column2.Name = "Column2";
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column1.DataPropertyName = "NomeF";
+            this.Column1.HeaderText = "Nome";
+            this.Column1.MinimumWidth = 150;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Data_nascimento";
+            this.Column3.HeaderText = "Data de Nascimento";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "CPF";
+            this.Column4.HeaderText = "CPF";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "RG";
+            this.Column5.HeaderText = "RG";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Endereco";
+            this.Column6.HeaderText = "Endereco";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Complemento";
+            this.Column7.HeaderText = "Complemento";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "Cargo";
+            this.Column8.HeaderText = "Cargo";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "observacao";
+            this.Column9.HeaderText = "Observação";
+            this.Column9.Name = "Column9";
+            // 
             // frmConsultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,6 +202,12 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvFuncionario;
+        private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.Button btnAlter;
+        private System.Windows.Forms.Button btnProc;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRem;
+        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -211,11 +217,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.Button btnNovo;
-        private System.Windows.Forms.Button btnAlter;
-        private System.Windows.Forms.Button btnProc;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnRem;
-        private System.Windows.Forms.TextBox txtCPF;
     }
 }

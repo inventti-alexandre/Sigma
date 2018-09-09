@@ -53,14 +53,20 @@ namespace Frei.Marcos.Sigma.DB.Cliente
             return db.ExecuteInsertScriptWithPk(script, parms);
         }
 
-        public void Remover()
+        public int RemoverCliente(string id)
         {
+            string script = @"DELETE FROM Cliente WHERE idCliente = @idCliente";
 
+            List<MySqlParameter> parms = new List<MySqlParameter>();
+            parms.Add(new MySqlParameter("idCliente", id));
+
+            Database db = new Database();
+            return db.ExecuteInsertScriptWithPk(script, parms);
         }
 
-        public List<ClienteDTO> ListarClientes()
+        public List<ClienteDTO> ListarClientes(string nome)
         {
-            string script = @"SELECT * FROM Cliente";
+            string script = $"SELECT * FROM Cliente WHERE nome like '%{nome}%'";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
 

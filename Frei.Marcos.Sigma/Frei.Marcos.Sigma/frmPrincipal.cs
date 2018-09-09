@@ -35,5 +35,23 @@ namespace Frei.Marcos.Sigma
             Modulos.ControleDeOrcamento.frmConsultar screen = new Modulos.ControleDeOrcamento.frmConsultar();
             CarregarScreen(screen);
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Modulos.ControleDeCliente.frmClienteConsultar screen = new Modulos.ControleDeCliente.frmClienteConsultar();
+            CarregarScreen(screen);
+        }
+
+        private void atendimentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Modulos.ControleDeAtendimento.frmConsultar screen = new Modulos.ControleDeAtendimento.frmConsultar();
+            CarregarScreen(screen);
+        }
+
+        private void veiculoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Modulos.ControleDEVeiculo.frmConsultar screen = new Modulos.ControleDEVeiculo.frmConsultar();
+            CarregarScreen(screen);
+        }
     }
 }

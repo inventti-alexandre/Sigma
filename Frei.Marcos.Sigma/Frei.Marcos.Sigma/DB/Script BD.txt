@@ -5,7 +5,7 @@ USE SigmaDB;
 CREATE TABLE Funcionario (
 idFuncionario INT NOT NULL AUTO_INCREMENT,
 Usuario VARCHAR(20) NOT NULL,
-Nome VARCHAR(50) NOT NULL,
+NomeF VARCHAR(50) NOT NULL,
 Data_nascimento DATE NOT NULL,
 CPF VARCHAR(15) NOT NULL,
 RG VARCHAR(15) NOT NULL,
@@ -18,7 +18,7 @@ PRIMARY KEY (idFuncionario));
 CREATE TABLE orcamento (
 id_orcamento INT NOT NULL AUTO_INCREMENT,
 data DATE NOT NULL,
-descricao VARCHAR(30) NULL,
+descricao VARCHAR(300) NULL,
 valor DOUBLE NOT NULL,
 situacao VARCHAR(45) NOT NULL,
 funcionario_id_funcionario INT NULL,
@@ -33,15 +33,15 @@ nome VARCHAR(45) NOT NULL,
 Data_nascimento DATE NOT NULL,
 cep VARCHAR(45) NULL,
 estado VARCHAR(2) NOT NULL,
-cidade VARCHAR(45) NOT NULL,
-bairro VARCHAR(45) NOT NULL,
-endereco VARCHAR(45) NOT NULL,
+cidade VARCHAR(200) NOT NULL,
+bairro VARCHAR(200) NOT NULL,
+endereco VARCHAR(200) NOT NULL,
 telefone VARCHAR(15) NULL,
 celular VARCHAR(15) NULL,
 PRIMARY KEY (idCliente));
 
 CREATE TABLE Atendimento (
-idAtendimento INT NOT NULL,
+idAtendimento INT NOT NULL AUTO_INCREMENT,
 Data DATE NULL,
 Descricao VARCHAR(300) NULL,
 Horario TIME NULL,
@@ -75,6 +75,9 @@ PRIMARY KEY (id_veiculos),
 FOREIGN KEY (cliente_id_cliente) REFERENCES Cliente (idCliente));
 
 CREATE VIEW vw_Orcamento_Funcionario AS
-	SELECT orcamento.*, Funcionario.Nome, Funcionario.Cargo FROM orcamento JOIN Funcionario ON funcionario_id_funcionario = idFuncionario;
+	SELECT orcamento.*, Funcionario.NomeF, Funcionario.Cargo FROM orcamento JOIN Funcionario ON funcionario_id_funcionario = idFuncionario;
+
+CREATE VIEW vw_Atendimento AS
+	SELECT Atendimento.*, Cliente.nome, Cliente.CPF_CNPJ, Funcionario.NomeF, Funcionario.Cargo FROM Atendimento JOIN Cliente ON cliente_id_cliente = idCliente JOIN Funcionario ON Funcionario_id_funcionario = idFuncionario;
     
-Select * From vw_Orcamento_Funcionario;
+SELECT * FROM vw_Atendimento;
