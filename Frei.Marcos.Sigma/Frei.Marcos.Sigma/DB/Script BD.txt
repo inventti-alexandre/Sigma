@@ -69,7 +69,7 @@ id_veiculos INT NOT NULL AUTO_INCREMENT,
 placa VARCHAR(8) NOT NULL,
 marca VARCHAR(45) NOT NULL,
 modelo VARCHAR(15) NULL,
-cor VARCHAR(5) NULL,
+cor VARCHAR(50) NULL,
 cliente_id_cliente INT NULL,
 PRIMARY KEY (id_veiculos),
 FOREIGN KEY (cliente_id_cliente) REFERENCES Cliente (idCliente));
@@ -80,4 +80,7 @@ CREATE VIEW vw_Orcamento_Funcionario AS
 CREATE VIEW vw_Atendimento AS
 	SELECT Atendimento.*, Cliente.nome, Cliente.CPF_CNPJ, Funcionario.NomeF, Funcionario.Cargo FROM Atendimento JOIN Cliente ON cliente_id_cliente = idCliente JOIN Funcionario ON Funcionario_id_funcionario = idFuncionario;
     
-SELECT * FROM vw_Atendimento;
+CREATE VIEW vw_Veiculo AS
+	SELECT veiculos.*, Cliente.nome, Cliente.CPF_CNPJ FROM veiculos JOIN Cliente ON cliente_id_cliente = idCliente;
+    
+SELECT * FROM Cliente;
