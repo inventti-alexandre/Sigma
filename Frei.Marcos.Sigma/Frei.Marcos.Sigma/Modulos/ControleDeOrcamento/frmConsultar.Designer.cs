@@ -110,7 +110,7 @@
             this.btnRem.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.btnRem.Location = new System.Drawing.Point(3, 425);
             this.btnRem.Name = "btnRem";
-            this.btnRem.Size = new System.Drawing.Size(75, 34);
+            this.btnRem.Size = new System.Drawing.Size(85, 34);
             this.btnRem.TabIndex = 9;
             this.btnRem.Text = "Remover";
             this.btnRem.UseVisualStyleBackColor = false;
@@ -142,11 +142,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 15.75F);
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(200, 94);
+            this.label1.Location = new System.Drawing.Point(177, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 25);
+            this.label1.Size = new System.Drawing.Size(239, 24);
             this.label1.TabIndex = 13;
             this.label1.Text = "Consultar Orçamento";
             // 

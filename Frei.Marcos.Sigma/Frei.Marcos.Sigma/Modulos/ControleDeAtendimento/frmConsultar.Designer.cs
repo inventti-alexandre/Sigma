@@ -116,7 +116,7 @@
             // btnNovo
             // 
             this.btnNovo.BackColor = System.Drawing.Color.Red;
-            this.btnNovo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.btnNovo.Location = new System.Drawing.Point(572, 447);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(75, 38);
@@ -128,7 +128,7 @@
             // btnRem
             // 
             this.btnRem.BackColor = System.Drawing.Color.Red;
-            this.btnRem.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRem.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.btnRem.Location = new System.Drawing.Point(3, 447);
             this.btnRem.Name = "btnRem";
             this.btnRem.Size = new System.Drawing.Size(145, 38);
@@ -150,10 +150,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(193, 100);
+            this.label6.Font = new System.Drawing.Font("Cooper Black", 15.75F);
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(158, 100);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(268, 29);
+            this.label6.Size = new System.Drawing.Size(292, 24);
             this.label6.TabIndex = 36;
             this.label6.Text = "Consultar de Atendimento";
             // 

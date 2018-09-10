@@ -151,17 +151,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(59, 152);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 23);
+            this.label1.Size = new System.Drawing.Size(130, 23);
             this.label1.TabIndex = 12;
             this.label1.Text = "Consultar Nome";
             // 
             // btnProc
             // 
             this.btnProc.BackColor = System.Drawing.Color.Red;
-            this.btnProc.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProc.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.btnProc.Location = new System.Drawing.Point(315, 152);
             this.btnProc.Name = "btnProc";
             this.btnProc.Size = new System.Drawing.Size(84, 34);
@@ -173,7 +173,7 @@
             // btnRem
             // 
             this.btnRem.BackColor = System.Drawing.Color.Red;
-            this.btnRem.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRem.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.btnRem.Location = new System.Drawing.Point(21, 459);
             this.btnRem.Name = "btnRem";
             this.btnRem.Size = new System.Drawing.Size(82, 31);
@@ -185,7 +185,7 @@
             // btnNovo
             // 
             this.btnNovo.BackColor = System.Drawing.Color.Red;
-            this.btnNovo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.btnNovo.Location = new System.Drawing.Point(491, 459);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(75, 31);
@@ -207,10 +207,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(205, 100);
+            this.label6.Font = new System.Drawing.Font("Cooper Black", 15.75F);
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(185, 100);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(268, 29);
+            this.label6.Size = new System.Drawing.Size(292, 24);
             this.label6.TabIndex = 37;
             this.label6.Text = "Consultar de Atendimento";
             // 

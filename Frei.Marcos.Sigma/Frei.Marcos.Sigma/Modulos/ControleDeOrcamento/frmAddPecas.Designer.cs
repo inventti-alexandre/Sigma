@@ -238,11 +238,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label6.Font = new System.Drawing.Font("Cooper Black", 15.75F);
             this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Location = new System.Drawing.Point(303, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 25);
+            this.label6.Size = new System.Drawing.Size(179, 24);
             this.label6.TabIndex = 19;
             this.label6.Text = "Adicionar peças";
             // 

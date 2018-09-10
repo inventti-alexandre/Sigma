@@ -53,5 +53,10 @@ namespace Frei.Marcos.Sigma
             Modulos.ControleDEVeiculo.frmConsultar screen = new Modulos.ControleDEVeiculo.frmConsultar();
             CarregarScreen(screen);
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
