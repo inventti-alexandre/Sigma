@@ -60,5 +60,10 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeOrcamento
             frm.ShowDialog();
             Close();
         }
+
+        private void dgvPecas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

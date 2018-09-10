@@ -70,6 +70,11 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDEVeiculo
                 MessageBox.Show("Ocorreu um erro: " + ex.Message, "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
