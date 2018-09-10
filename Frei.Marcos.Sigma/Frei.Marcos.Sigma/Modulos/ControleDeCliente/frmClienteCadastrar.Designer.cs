@@ -87,7 +87,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
+            this.tabControl1.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.tabControl1.Location = new System.Drawing.Point(17, 107);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -163,26 +163,26 @@
             // 
             // txtBairro
             // 
-            this.txtBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBairro.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtBairro.Location = new System.Drawing.Point(345, 206);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(218, 26);
+            this.txtBairro.Size = new System.Drawing.Size(218, 27);
             this.txtBairro.TabIndex = 29;
             // 
             // txtCelular
             // 
-            this.txtCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCelular.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtCelular.Location = new System.Drawing.Point(25, 345);
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(218, 26);
+            this.txtCelular.Size = new System.Drawing.Size(218, 27);
             this.txtCelular.TabIndex = 29;
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefone.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtTelefone.Location = new System.Drawing.Point(25, 304);
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(218, 26);
+            this.txtTelefone.Size = new System.Drawing.Size(218, 27);
             this.txtTelefone.TabIndex = 29;
             // 
             // label11
@@ -207,10 +207,10 @@
             // 
             // txtLogradouro
             // 
-            this.txtLogradouro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogradouro.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtLogradouro.Location = new System.Drawing.Point(25, 258);
             this.txtLogradouro.Name = "txtLogradouro";
-            this.txtLogradouro.Size = new System.Drawing.Size(371, 26);
+            this.txtLogradouro.Size = new System.Drawing.Size(371, 27);
             this.txtLogradouro.TabIndex = 29;
             // 
             // label10
@@ -225,10 +225,10 @@
             // 
             // txtCidade
             // 
-            this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidade.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtCidade.Location = new System.Drawing.Point(109, 206);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(218, 26);
+            this.txtCidade.Size = new System.Drawing.Size(218, 27);
             this.txtCidade.TabIndex = 29;
             // 
             // label9
@@ -243,10 +243,10 @@
             // 
             // txtUF
             // 
-            this.txtUF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUF.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtUF.Location = new System.Drawing.Point(25, 206);
             this.txtUF.Name = "txtUF";
-            this.txtUF.Size = new System.Drawing.Size(63, 26);
+            this.txtUF.Size = new System.Drawing.Size(63, 27);
             this.txtUF.TabIndex = 29;
             // 
             // label8
@@ -261,10 +261,10 @@
             // 
             // txtCEP
             // 
-            this.txtCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCEP.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtCEP.Location = new System.Drawing.Point(25, 162);
             this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(218, 26);
+            this.txtCEP.Size = new System.Drawing.Size(218, 27);
             this.txtCEP.TabIndex = 29;
             // 
             // label7
@@ -279,19 +279,19 @@
             // 
             // txtCPF
             // 
-            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPF.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtCPF.Location = new System.Drawing.Point(393, 25);
             this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(218, 26);
+            this.txtCPF.Size = new System.Drawing.Size(218, 27);
             this.txtCPF.TabIndex = 29;
             this.txtCPF.TextChanged += new System.EventHandler(this.txtCPF_TextChanged);
             // 
             // txtNome
             // 
-            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtNome.Location = new System.Drawing.Point(78, 25);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(218, 26);
+            this.txtNome.Size = new System.Drawing.Size(218, 27);
             this.txtNome.TabIndex = 29;
             // 
             // label6
@@ -360,10 +360,10 @@
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.txtRazaoSocial);
-            this.tabPage2.Location = new System.Drawing.Point(4, 32);
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(630, 360);
+            this.tabPage2.Size = new System.Drawing.Size(630, 364);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Pessoa Jurídica";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -392,23 +392,26 @@
             // 
             // txtBairroJ
             // 
+            this.txtBairroJ.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtBairroJ.Location = new System.Drawing.Point(346, 182);
             this.txtBairroJ.Name = "txtBairroJ";
-            this.txtBairroJ.Size = new System.Drawing.Size(218, 30);
+            this.txtBairroJ.Size = new System.Drawing.Size(218, 27);
             this.txtBairroJ.TabIndex = 39;
             // 
             // txtCelularJ
             // 
+            this.txtCelularJ.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtCelularJ.Location = new System.Drawing.Point(91, 316);
             this.txtCelularJ.Name = "txtCelularJ";
-            this.txtCelularJ.Size = new System.Drawing.Size(218, 30);
+            this.txtCelularJ.Size = new System.Drawing.Size(218, 27);
             this.txtCelularJ.TabIndex = 40;
             // 
             // txtTelefoneJ
             // 
+            this.txtTelefoneJ.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtTelefoneJ.Location = new System.Drawing.Point(91, 270);
             this.txtTelefoneJ.Name = "txtTelefoneJ";
-            this.txtTelefoneJ.Size = new System.Drawing.Size(218, 30);
+            this.txtTelefoneJ.Size = new System.Drawing.Size(218, 27);
             this.txtTelefoneJ.TabIndex = 41;
             // 
             // label13
@@ -433,9 +436,10 @@
             // 
             // txtLogradouroJ
             // 
+            this.txtLogradouroJ.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtLogradouroJ.Location = new System.Drawing.Point(123, 218);
             this.txtLogradouroJ.Name = "txtLogradouroJ";
-            this.txtLogradouroJ.Size = new System.Drawing.Size(371, 30);
+            this.txtLogradouroJ.Size = new System.Drawing.Size(371, 27);
             this.txtLogradouroJ.TabIndex = 42;
             // 
             // label15
@@ -450,9 +454,10 @@
             // 
             // txtCidadeJ
             // 
+            this.txtCidadeJ.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtCidadeJ.Location = new System.Drawing.Point(110, 182);
             this.txtCidadeJ.Name = "txtCidadeJ";
-            this.txtCidadeJ.Size = new System.Drawing.Size(218, 30);
+            this.txtCidadeJ.Size = new System.Drawing.Size(218, 27);
             this.txtCidadeJ.TabIndex = 43;
             // 
             // label16
@@ -467,9 +472,10 @@
             // 
             // txtUFj
             // 
+            this.txtUFj.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtUFj.Location = new System.Drawing.Point(26, 182);
             this.txtUFj.Name = "txtUFj";
-            this.txtUFj.Size = new System.Drawing.Size(63, 30);
+            this.txtUFj.Size = new System.Drawing.Size(63, 27);
             this.txtUFj.TabIndex = 44;
             // 
             // label17
@@ -484,9 +490,10 @@
             // 
             // txtCEPj
             // 
+            this.txtCEPj.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtCEPj.Location = new System.Drawing.Point(292, 84);
             this.txtCEPj.Name = "txtCEPj";
-            this.txtCEPj.Size = new System.Drawing.Size(218, 30);
+            this.txtCEPj.Size = new System.Drawing.Size(218, 27);
             this.txtCEPj.TabIndex = 45;
             // 
             // label18
@@ -511,9 +518,10 @@
             // 
             // txtCNPJ
             // 
+            this.txtCNPJ.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtCNPJ.Location = new System.Drawing.Point(292, 36);
             this.txtCNPJ.Name = "txtCNPJ";
-            this.txtCNPJ.Size = new System.Drawing.Size(218, 30);
+            this.txtCNPJ.Size = new System.Drawing.Size(218, 27);
             this.txtCNPJ.TabIndex = 31;
             // 
             // label21
@@ -528,9 +536,10 @@
             // 
             // txtNomeJ
             // 
+            this.txtNomeJ.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtNomeJ.Location = new System.Drawing.Point(30, 36);
             this.txtNomeJ.Name = "txtNomeJ";
-            this.txtNomeJ.Size = new System.Drawing.Size(218, 30);
+            this.txtNomeJ.Size = new System.Drawing.Size(218, 27);
             this.txtNomeJ.TabIndex = 31;
             // 
             // label4
@@ -555,9 +564,10 @@
             // 
             // txtRazaoSocial
             // 
+            this.txtRazaoSocial.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.txtRazaoSocial.Location = new System.Drawing.Point(27, 100);
             this.txtRazaoSocial.Name = "txtRazaoSocial";
-            this.txtRazaoSocial.Size = new System.Drawing.Size(147, 30);
+            this.txtRazaoSocial.Size = new System.Drawing.Size(147, 27);
             this.txtRazaoSocial.TabIndex = 0;
             // 
             // label1

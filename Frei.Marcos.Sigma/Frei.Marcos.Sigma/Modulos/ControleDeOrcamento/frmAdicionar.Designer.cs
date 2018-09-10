@@ -313,6 +313,7 @@
             this.Controls.Add(this.label2);
             this.Name = "frmAdicionar";
             this.Text = "frmAdicionar";
+            this.Load += new System.EventHandler(this.frmAdicionar_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPecas)).EndInit();

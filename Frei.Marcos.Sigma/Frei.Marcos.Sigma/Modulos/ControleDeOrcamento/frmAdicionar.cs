@@ -66,5 +66,10 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeOrcamento
         {
             lblValorTotal.Text = (Convert.ToInt32(lblValorPecas.Text) + Convert.ToInt32(txtValor.Text)).ToString();
         }
+
+        private void frmAdicionar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
