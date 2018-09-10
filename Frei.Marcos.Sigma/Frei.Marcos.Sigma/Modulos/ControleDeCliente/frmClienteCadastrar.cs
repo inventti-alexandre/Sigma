@@ -135,5 +135,10 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeCliente
                 MessageBox.Show("Ocorreu um erro: " + ex.Message, "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtCPF_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

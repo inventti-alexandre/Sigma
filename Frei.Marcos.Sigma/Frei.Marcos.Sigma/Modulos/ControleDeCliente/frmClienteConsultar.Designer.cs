@@ -45,7 +45,10 @@
             this.btnProc = new System.Windows.Forms.Button();
             this.btnRem = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvCliente
@@ -64,10 +67,10 @@
             this.Column10,
             this.Column11});
             this.dgvCliente.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvCliente.Location = new System.Drawing.Point(3, 111);
+            this.dgvCliente.Location = new System.Drawing.Point(63, 192);
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.RowHeadersVisible = false;
-            this.dgvCliente.Size = new System.Drawing.Size(545, 290);
+            this.dgvCliente.Size = new System.Drawing.Size(545, 264);
             this.dgvCliente.TabIndex = 7;
             // 
             // Column2
@@ -138,54 +141,87 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(146, 47);
+            this.txtNome.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(189, 152);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(100, 20);
+            this.txtNome.Size = new System.Drawing.Size(120, 27);
             this.txtNome.TabIndex = 13;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 50);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(59, 152);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.Size = new System.Drawing.Size(124, 23);
             this.label1.TabIndex = 12;
             this.label1.Text = "Consultar Nome";
             // 
             // btnProc
             // 
-            this.btnProc.Location = new System.Drawing.Point(252, 45);
+            this.btnProc.BackColor = System.Drawing.Color.Red;
+            this.btnProc.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProc.Location = new System.Drawing.Point(315, 152);
             this.btnProc.Name = "btnProc";
-            this.btnProc.Size = new System.Drawing.Size(75, 23);
+            this.btnProc.Size = new System.Drawing.Size(84, 34);
             this.btnProc.TabIndex = 8;
             this.btnProc.Text = "Procurar";
-            this.btnProc.UseVisualStyleBackColor = true;
+            this.btnProc.UseVisualStyleBackColor = false;
             this.btnProc.Click += new System.EventHandler(this.btnProc_Click);
             // 
             // btnRem
             // 
-            this.btnRem.Location = new System.Drawing.Point(3, 407);
+            this.btnRem.BackColor = System.Drawing.Color.Red;
+            this.btnRem.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRem.Location = new System.Drawing.Point(21, 459);
             this.btnRem.Name = "btnRem";
-            this.btnRem.Size = new System.Drawing.Size(75, 23);
+            this.btnRem.Size = new System.Drawing.Size(82, 31);
             this.btnRem.TabIndex = 9;
             this.btnRem.Text = "Remover";
-            this.btnRem.UseVisualStyleBackColor = true;
+            this.btnRem.UseVisualStyleBackColor = false;
             this.btnRem.Click += new System.EventHandler(this.btnRem_Click);
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(473, 407);
+            this.btnNovo.BackColor = System.Drawing.Color.Red;
+            this.btnNovo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Location = new System.Drawing.Point(491, 459);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(75, 23);
+            this.btnNovo.Size = new System.Drawing.Size(75, 31);
             this.btnNovo.TabIndex = 11;
             this.btnNovo.Text = "Novo";
-            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Frei.Marcos.Sigma.Properties.Resources.SIGMA;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(136, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(390, 83);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(205, 100);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(268, 29);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Consultar de Atendimento";
             // 
             // frmClienteConsultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Frei.Marcos.Sigma.Properties.Resources.Fundo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvCliente);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
@@ -193,8 +229,9 @@
             this.Controls.Add(this.btnRem);
             this.Controls.Add(this.btnNovo);
             this.Name = "frmClienteConsultar";
-            this.Size = new System.Drawing.Size(564, 464);
+            this.Size = new System.Drawing.Size(650, 500);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +256,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label6;
     }
 }

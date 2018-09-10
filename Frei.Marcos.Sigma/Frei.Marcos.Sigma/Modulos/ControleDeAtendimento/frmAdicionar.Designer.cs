@@ -51,7 +51,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(252, 372);
+            this.label3.Location = new System.Drawing.Point(199, 369);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 23);
             this.label3.TabIndex = 21;
@@ -61,7 +61,7 @@
             // 
             this.panel1.Controls.Add(this.rbnReprovado);
             this.panel1.Controls.Add(this.rbnAprovado);
-            this.panel1.Location = new System.Drawing.Point(241, 381);
+            this.panel1.Location = new System.Drawing.Point(188, 378);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 45);
             this.panel1.TabIndex = 33;
@@ -94,7 +94,7 @@
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.Red;
             this.btnSalvar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(527, 391);
+            this.btnSalvar.Location = new System.Drawing.Point(474, 388);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 35);
             this.btnSalvar.TabIndex = 32;
@@ -106,7 +106,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(141, 203);
+            this.label4.Location = new System.Drawing.Point(88, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 23);
             this.label4.TabIndex = 22;
@@ -114,7 +114,7 @@
             // 
             // txtDesc
             // 
-            this.txtDesc.Location = new System.Drawing.Point(241, 295);
+            this.txtDesc.Location = new System.Drawing.Point(188, 292);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(346, 60);
@@ -125,7 +125,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(153, 291);
+            this.label2.Location = new System.Drawing.Point(100, 288);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 23);
             this.label2.TabIndex = 28;
@@ -135,7 +135,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(174, 237);
+            this.label1.Location = new System.Drawing.Point(121, 234);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 23);
             this.label1.TabIndex = 22;
@@ -145,7 +145,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(120, 267);
+            this.label5.Location = new System.Drawing.Point(67, 264);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 23);
             this.label5.TabIndex = 22;
@@ -154,7 +154,7 @@
             // txtOrcN
             // 
             this.txtOrcN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOrcN.Location = new System.Drawing.Point(241, 266);
+            this.txtOrcN.Location = new System.Drawing.Point(188, 263);
             this.txtOrcN.Multiline = true;
             this.txtOrcN.Name = "txtOrcN";
             this.txtOrcN.Size = new System.Drawing.Size(346, 23);
@@ -165,7 +165,7 @@
             this.cboFunc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboFunc.FormattingEnabled = true;
-            this.cboFunc.Location = new System.Drawing.Point(241, 198);
+            this.cboFunc.Location = new System.Drawing.Point(188, 195);
             this.cboFunc.Name = "cboFunc";
             this.cboFunc.Size = new System.Drawing.Size(346, 28);
             this.cboFunc.TabIndex = 34;
@@ -175,7 +175,7 @@
             this.cboCli.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCli.FormattingEnabled = true;
-            this.cboCli.Location = new System.Drawing.Point(241, 232);
+            this.cboCli.Location = new System.Drawing.Point(188, 229);
             this.cboCli.Name = "cboCli";
             this.cboCli.Size = new System.Drawing.Size(346, 28);
             this.cboCli.TabIndex = 34;
@@ -184,7 +184,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(274, 121);
+            this.label6.Location = new System.Drawing.Point(221, 118);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(258, 29);
             this.label6.TabIndex = 35;
@@ -193,9 +193,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(178, 46);
+            this.pictureBox1.BackgroundImage = global::Frei.Marcos.Sigma.Properties.Resources.SIGMA;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(92, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(424, 72);
+            this.pictureBox1.Size = new System.Drawing.Size(475, 90);
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
@@ -203,7 +205,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 548);
+            this.BackgroundImage = global::Frei.Marcos.Sigma.Properties.Resources.Fundo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(667, 505);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cboCli);
