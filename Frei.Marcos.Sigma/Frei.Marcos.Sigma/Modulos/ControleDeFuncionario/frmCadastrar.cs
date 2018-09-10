@@ -76,5 +76,10 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeFuncionario
                 MessageBox.Show(ex.Message, "SIGMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void frmCadastrar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvFuncionario = new System.Windows.Forms.DataGridView();
-            this.btnNovo = new System.Windows.Forms.Button();
-            this.btnAlter = new System.Windows.Forms.Button();
-            this.btnProc = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnRem = new System.Windows.Forms.Button();
-            this.txtCPF = new System.Windows.Forms.TextBox();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,7 +38,16 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.btnAlter = new System.Windows.Forms.Button();
+            this.btnProc = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnRem = new System.Windows.Forms.Button();
+            this.txtCPF = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvFuncionario
@@ -66,62 +69,6 @@
             this.dgvFuncionario.RowHeadersVisible = false;
             this.dgvFuncionario.Size = new System.Drawing.Size(650, 290);
             this.dgvFuncionario.TabIndex = 0;
-            // 
-            // btnNovo
-            // 
-            this.btnNovo.Location = new System.Drawing.Point(572, 461);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(75, 23);
-            this.btnNovo.TabIndex = 1;
-            this.btnNovo.Text = "Novo";
-            this.btnNovo.UseVisualStyleBackColor = true;
-            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
-            // 
-            // btnAlter
-            // 
-            this.btnAlter.Location = new System.Drawing.Point(3, 461);
-            this.btnAlter.Name = "btnAlter";
-            this.btnAlter.Size = new System.Drawing.Size(75, 23);
-            this.btnAlter.TabIndex = 1;
-            this.btnAlter.Text = "Alterar";
-            this.btnAlter.UseVisualStyleBackColor = true;
-            this.btnAlter.Click += new System.EventHandler(this.btnAlter_Click);
-            // 
-            // btnProc
-            // 
-            this.btnProc.Location = new System.Drawing.Point(267, 88);
-            this.btnProc.Name = "btnProc";
-            this.btnProc.Size = new System.Drawing.Size(75, 23);
-            this.btnProc.TabIndex = 1;
-            this.btnProc.Text = "Procurar";
-            this.btnProc.UseVisualStyleBackColor = true;
-            this.btnProc.Click += new System.EventHandler(this.btnProc_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Consultar CPF";
-            // 
-            // btnRem
-            // 
-            this.btnRem.Location = new System.Drawing.Point(80, 461);
-            this.btnRem.Name = "btnRem";
-            this.btnRem.Size = new System.Drawing.Size(75, 23);
-            this.btnRem.TabIndex = 1;
-            this.btnRem.Text = "Remover";
-            this.btnRem.UseVisualStyleBackColor = true;
-            this.btnRem.Click += new System.EventHandler(this.btnRem_Click);
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.Location = new System.Drawing.Point(161, 90);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(100, 20);
-            this.txtCPF.TabIndex = 6;
             // 
             // Column2
             // 
@@ -180,10 +127,106 @@
             this.Column9.HeaderText = "Observação";
             this.Column9.Name = "Column9";
             // 
+            // btnNovo
+            // 
+            this.btnNovo.BackColor = System.Drawing.Color.Red;
+            this.btnNovo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
+            this.btnNovo.Location = new System.Drawing.Point(572, 461);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(75, 36);
+            this.btnNovo.TabIndex = 1;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = false;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
+            // 
+            // btnAlter
+            // 
+            this.btnAlter.BackColor = System.Drawing.Color.Red;
+            this.btnAlter.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
+            this.btnAlter.Location = new System.Drawing.Point(3, 461);
+            this.btnAlter.Name = "btnAlter";
+            this.btnAlter.Size = new System.Drawing.Size(86, 36);
+            this.btnAlter.TabIndex = 1;
+            this.btnAlter.Text = "Alterar";
+            this.btnAlter.UseVisualStyleBackColor = false;
+            this.btnAlter.Click += new System.EventHandler(this.btnAlter_Click);
+            // 
+            // btnProc
+            // 
+            this.btnProc.BackColor = System.Drawing.Color.Red;
+            this.btnProc.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
+            this.btnProc.Location = new System.Drawing.Point(255, 127);
+            this.btnProc.Name = "btnProc";
+            this.btnProc.Size = new System.Drawing.Size(94, 35);
+            this.btnProc.TabIndex = 1;
+            this.btnProc.Text = "Procurar";
+            this.btnProc.UseVisualStyleBackColor = false;
+            this.btnProc.Click += new System.EventHandler(this.btnProc_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(17, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 23);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Consultar CPF";
+            // 
+            // btnRem
+            // 
+            this.btnRem.BackColor = System.Drawing.Color.Red;
+            this.btnRem.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
+            this.btnRem.Location = new System.Drawing.Point(95, 461);
+            this.btnRem.Name = "btnRem";
+            this.btnRem.Size = new System.Drawing.Size(84, 36);
+            this.btnRem.TabIndex = 1;
+            this.btnRem.Text = "Remover";
+            this.btnRem.UseVisualStyleBackColor = false;
+            this.btnRem.Click += new System.EventHandler(this.btnRem_Click);
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.Font = new System.Drawing.Font("Calibri Light", 12F);
+            this.txtCPF.Location = new System.Drawing.Point(149, 129);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(100, 27);
+            this.txtCPF.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Frei.Marcos.Sigma.Properties.Resources.SIGMA;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(173, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 73);
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Cooper Black", 15.75F);
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(172, 81);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(251, 24);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Consultar Funcionario";
+            // 
             // frmConsultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Frei.Marcos.Sigma.Properties.Resources.Fundo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnProc);
@@ -194,6 +237,7 @@
             this.Name = "frmConsultar";
             this.Size = new System.Drawing.Size(650, 500);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,5 +261,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label9;
     }
 }
