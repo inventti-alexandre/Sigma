@@ -38,7 +38,10 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRem = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvFuncionario
@@ -103,35 +106,67 @@
             // 
             // btnRem
             // 
+            this.btnRem.BackColor = System.Drawing.Color.Red;
+            this.btnRem.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.btnRem.Location = new System.Drawing.Point(3, 425);
             this.btnRem.Name = "btnRem";
-            this.btnRem.Size = new System.Drawing.Size(75, 23);
+            this.btnRem.Size = new System.Drawing.Size(75, 34);
             this.btnRem.TabIndex = 9;
             this.btnRem.Text = "Remover";
-            this.btnRem.UseVisualStyleBackColor = true;
+            this.btnRem.UseVisualStyleBackColor = false;
             this.btnRem.Click += new System.EventHandler(this.btnRem_Click);
             // 
             // btnNovo
             // 
+            this.btnNovo.BackColor = System.Drawing.Color.Red;
+            this.btnNovo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.btnNovo.Location = new System.Drawing.Point(572, 425);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(75, 23);
+            this.btnNovo.Size = new System.Drawing.Size(75, 34);
             this.btnNovo.TabIndex = 11;
             this.btnNovo.Text = "Novo";
-            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Frei.Marcos.Sigma.Properties.Resources.SIGMA;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(151, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(299, 77);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(200, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(215, 25);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Consultar Orçamento";
             // 
             // frmConsultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Frei.Marcos.Sigma.Properties.Resources.Fundo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvFuncionario);
             this.Controls.Add(this.btnRem);
             this.Controls.Add(this.btnNovo);
             this.Name = "frmConsultar";
             this.Size = new System.Drawing.Size(650, 500);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -147,5 +182,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
