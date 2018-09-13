@@ -158,6 +158,12 @@
     <Compile Include="Modulos\ControleDEVeiculo\frmAlterarVeiculo.Designer.cs">
       <DependentUpon>frmAlterarVeiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\CadastraCliente\Cadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\CadastraCliente\Cadastrar.Designer.cs">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDEVeiculo\frmAlterarVeiculo.resx">
       <DependentUpon>frmAlterarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\CadastraCliente\Cadastrar.resx">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
