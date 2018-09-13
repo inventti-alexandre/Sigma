@@ -121,10 +121,10 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
-            this.tabPage1.Location = new System.Drawing.Point(4, 32);
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(630, 360);
+            this.tabPage1.Size = new System.Drawing.Size(630, 364);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pessoa Física";
             this.tabPage1.UseVisualStyleBackColor = true;
