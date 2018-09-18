@@ -34,6 +34,7 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeFuncionario
                 dto.Cargo = txtCargo.Text;
                 dto.Complemento = txtComplemento.Text;
                 dto.CPF = txtCPF.Text;
+                dto.Senha = txtSenha.Text;
                 dto.Data_nascimento = dtpNasc.Value;
                 dto.Endereco = txtEndereco.Text;
                 dto.observacao = txtObs.Text;

@@ -60,7 +60,7 @@ namespace Frei.Marcos.Sigma.Modulos.ControleDeAtendimento
 
         private void frmConsultar_Load(object sender, EventArgs e)
         {
-            ''
+            
         }
 
         private void dgvAtendimento_CellContentClick(object sender, DataGridViewCellEventArgs e)

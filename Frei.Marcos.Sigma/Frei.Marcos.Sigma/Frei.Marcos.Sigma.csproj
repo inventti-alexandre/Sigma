@@ -33,9 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -71,9 +72,17 @@
     <Compile Include="DB\Pecas\PecasBusiness.cs" />
     <Compile Include="DB\Pecas\PecasDatabase.cs" />
     <Compile Include="DB\Pecas\PecasDTO.cs" />
+    <Compile Include="DB\Usuario\UsuarioDatabase.cs" />
+    <Compile Include="DB\Usuario\UsuarioDTO.cs" />
     <Compile Include="DB\Veiculos\VeiculoBusiness.cs" />
     <Compile Include="DB\Veiculos\VeiculoDatabase.cs" />
     <Compile Include="DB\Veiculos\VeiculoDTO.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,32 +149,35 @@
     <Compile Include="Modulos\ControleDeOrcamento\frmConsultar.Designer.cs">
       <DependentUpon>frmConsultar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\ControleDEVeiculo\frmConsultar.cs">
+    <Compile Include="Modulos\ControleDeVeiculo\frmConsultar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modulos\ControleDEVeiculo\frmConsultar.Designer.cs">
+    <Compile Include="Modulos\ControleDeVeiculo\frmConsultar.Designer.cs">
       <DependentUpon>frmConsultar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\ControleDEVeiculo\frmCadastrarVeiculo.cs">
+    <Compile Include="Modulos\ControleDeVeiculo\frmCadastrarVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\ControleDEVeiculo\frmCadastrarVeiculo.Designer.cs">
+    <Compile Include="Modulos\ControleDeVeiculo\frmCadastrarVeiculo.Designer.cs">
       <DependentUpon>frmCadastrarVeiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\ControleDEVeiculo\frmAlterarVeiculo.cs">
+    <Compile Include="Modulos\ControleDeVeiculo\frmAlterarVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\ControleDEVeiculo\frmAlterarVeiculo.Designer.cs">
+    <Compile Include="Modulos\ControleDeVeiculo\frmAlterarVeiculo.Designer.cs">
       <DependentUpon>frmAlterarVeiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\CadastraCliente\Cadastrar.cs">
+    <Compile Include="Modulos\ControleDeUsuario\Cadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\CadastraCliente\Cadastrar.Designer.cs">
+    <Compile Include="Modulos\ControleDeUsuario\Cadastrar.Designer.cs">
       <DependentUpon>Cadastrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,16 +211,16 @@
     <EmbeddedResource Include="Modulos\ControleDeOrcamento\frmConsultar.resx">
       <DependentUpon>frmConsultar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\ControleDEVeiculo\frmConsultar.resx">
+    <EmbeddedResource Include="Modulos\ControleDeVeiculo\frmConsultar.resx">
       <DependentUpon>frmConsultar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\ControleDEVeiculo\frmCadastrarVeiculo.resx">
+    <EmbeddedResource Include="Modulos\ControleDeVeiculo\frmCadastrarVeiculo.resx">
       <DependentUpon>frmCadastrarVeiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\ControleDEVeiculo\frmAlterarVeiculo.resx">
+    <EmbeddedResource Include="Modulos\ControleDeVeiculo\frmAlterarVeiculo.resx">
       <DependentUpon>frmAlterarVeiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\CadastraCliente\Cadastrar.resx">
+    <EmbeddedResource Include="Modulos\ControleDeUsuario\Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

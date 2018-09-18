@@ -12,8 +12,8 @@ namespace Frei.Marcos.Sigma.DB.Funcionario
     {
         public int CadastrarFuncionario(FuncionarioDTO dto)
         {
-            string script = @"INSERT Funcionario(Usuario, NomeF, Data_nascimento, CPF, RG, Endereco, Complemento, Cargo, observacao)
-                                          VALUES(@Usuario, @NomeF, @Data_nascimento, @CPF, @RG, @Endereco, @Complemento, @Cargo, @observacao)";
+            string script = @"INSERT Funcionario(Usuario, Senha, NomeF, Data_nascimento, CPF, RG, Endereco, Complemento, Cargo, observacao)
+                                          VALUES(@Usuario, @Senha, @NomeF, @Data_nascimento, @CPF, @RG, @Endereco, @Complemento, @Cargo, @observacao)";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
             parms.Add(new MySqlParameter("Usuario", dto.Usuario));
@@ -21,6 +21,7 @@ namespace Frei.Marcos.Sigma.DB.Funcionario
             parms.Add(new MySqlParameter("Data_nascimento", dto.Data_nascimento));
             parms.Add(new MySqlParameter("CPF", dto.CPF));
             parms.Add(new MySqlParameter("RG", dto.RG));
+            parms.Add(new MySqlParameter("Senha", dto.Senha));
             parms.Add(new MySqlParameter("Endereco", dto.Endereco));
             parms.Add(new MySqlParameter("Complemento", dto.Complemento));
             parms.Add(new MySqlParameter("Cargo", dto.Cargo));

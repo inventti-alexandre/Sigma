@@ -49,9 +49,11 @@
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.txtRG = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +96,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(16, 270);
+            this.label3.Location = new System.Drawing.Point(244, 268);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 23);
@@ -240,7 +242,7 @@
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Red;
             this.btnSearch.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSearch.Location = new System.Drawing.Point(530, 270);
+            this.btnSearch.Location = new System.Drawing.Point(695, 272);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 34);
@@ -254,7 +256,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(300, 270);
+            this.label10.Location = new System.Drawing.Point(465, 272);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(39, 23);
@@ -274,7 +276,7 @@
             // txtCEP
             // 
             this.txtCEP.Font = new System.Drawing.Font("Calibri Light", 12F);
-            this.txtCEP.Location = new System.Drawing.Point(390, 270);
+            this.txtCEP.Location = new System.Drawing.Point(555, 272);
             this.txtCEP.Margin = new System.Windows.Forms.Padding(4);
             this.txtCEP.Mask = "99999-999";
             this.txtCEP.Name = "txtCEP";
@@ -284,21 +286,21 @@
             // txtRG
             // 
             this.txtRG.Font = new System.Drawing.Font("Calibri Light", 12F);
-            this.txtRG.Location = new System.Drawing.Point(80, 270);
+            this.txtRG.Location = new System.Drawing.Point(308, 268);
             this.txtRG.Margin = new System.Windows.Forms.Padding(4);
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(132, 27);
             this.txtRG.TabIndex = 30;
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri Light", 12F);
-            this.textBox1.Location = new System.Drawing.Point(650, 205);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 27);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtName.Font = new System.Drawing.Font("Calibri Light", 12F);
+            this.txtName.Location = new System.Drawing.Point(650, 205);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(132, 27);
+            this.txtName.TabIndex = 1;
+            this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox1
             // 
@@ -323,6 +325,28 @@
             this.label11.Size = new System.Drawing.Size(67, 23);
             this.label11.TabIndex = 0;
             this.label11.Text = "Usuario";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(9, 263);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(56, 23);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Senha";
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Font = new System.Drawing.Font("Calibri Light", 12F);
+            this.txtSenha.Location = new System.Drawing.Point(84, 263);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(132, 27);
+            this.txtSenha.TabIndex = 1;
+            this.txtSenha.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // frmCadastrar
             // 
@@ -350,7 +374,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
@@ -389,8 +415,10 @@
         private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.MaskedTextBox txtCEP;
         private System.Windows.Forms.TextBox txtRG;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtSenha;
     }
 }
